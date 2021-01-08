@@ -1,0 +1,30 @@
+.popup{
+  width: 100%;
+  max-width: 522px;
+  padding: 58px 42px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 614px;
+  display: none;
+  &__title{
+    &_thanks{
+      margin-top: 75px;
+    }
+  }
+  &__text{
+    font-family: $secondFont;
+    font-size: 18px;
+    margin-top: 30px;
+    text-align: center;
+  }
+  &__inputBlock{
+    margin-top: 21px;
+  }
+  &__about{
+    margin-top: 16px;
+  }
+  &__btn{
+    text-transform: uppercase;
+    margin: 42px auto 0;
+  }
+}

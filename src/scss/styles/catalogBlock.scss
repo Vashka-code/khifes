@@ -1,0 +1,213 @@
+.catalogBlock{
+  padding: 20px 0 124px;
+  &__wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-top: 42px;
+  }
+  &__sitebar{
+    width: 292px;
+  }
+  &__content{
+    width: 912px;
+  }
+  &__products{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: -12px;
+  }
+  &__product{
+    margin-left: 12px;
+    margin-top: 28px;
+  }
+  &__selects{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    &_mob{
+      display: none;
+    }
+  }
+  &__selectText{
+    font-family: $secondFont;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: $neutral-regular;
+  }
+  &__selectBlock{
+    margin-left: 30px;
+    width: 280px;
+    &:first-child{
+      margin-left: 0;
+    }
+  }
+  &__select{
+    display: block;
+    width: 100%;
+    padding: 12px 16px;
+    border: 3px solid $neutral-secondary;
+    outline: none;
+    font-size: 14px;
+    appearance: none;
+  }
+  &__selectRel{
+    position: relative;
+  }
+  &__selectIcon{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 17px;
+    margin: auto;
+    pointer-events: none;
+  }
+  &__pagination{
+    margin-top: 37px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  &__btn{
+    width: 48px;
+    height: 48px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    background: #BBBBBB;
+    &:hover{
+      background: $primary-color;
+    }
+    &_prev{
+      transform: rotate(180deg);
+    }
+  }
+  &__icon{
+    path{
+      fill: #fff;
+    }
+  }
+  &__pages{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 5px;
+  }
+  &__pageLink{
+    display: block;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #000;
+    transition: 0.3s;
+    &:hover{
+      background: #E1E1E1
+    }
+    &.active{
+      background: #E1E1E1
+    }
+  }
+  &__sitebarItem{
+    padding: 22px 14px;
+    border-top: 1px solid $border-light;
+    &:first-child{
+      border-top: 0px;
+    }
+  }
+  &__title{
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-family: $secondFont;
+  }
+  &__label{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  &__checkText{
+    display: block;
+    margin-left: 20px;
+    flex-grow: 1;
+    font-size: 14px;
+  }
+  &__inputCheck{
+    display: none;
+    &:checked + .catalogBlock__checkBlock{
+      background: #000;
+    }
+  }
+  &__checkBlock{
+    display: block;
+    width: 17px;
+    height: 17px; 
+    border: 1px solid #000000;
+    transition: 0.3s;
+  }
+  &__infMob{
+    display: none;
+    justify-content: space-between;
+  }
+  &__filter{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  &__filterText{
+    font-family: $secondFont;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    display: block;
+    margin-left: 8px;
+  }
+  &__infNun{
+    font-size: 14px;
+  }
+  &__sitebarTop{
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+  }
+  &__sitebarBtns{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  &__sitebarThrow{
+    display: flex;
+    align-items: center;
+    display: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+    outline: none;
+    border: none;
+  }
+  &__sitebarThrowText{
+    display: block;
+    margin-left: 4px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #000000;
+    border-bottom: 1px dashed #000;
+  }
+}

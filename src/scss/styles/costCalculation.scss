@@ -1,0 +1,26 @@
+.costCalculation{
+  width: 90%;
+  max-width: 814px;
+  background: #FFFFFF;
+  display: none;
+  &__title{
+    font-size: 30px;
+  }
+  &__list{
+    margin-top: 44px;
+  }
+  &__item{
+    padding: 13px 0 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    border-bottom: 1px solid #DCDBDB;
+  }
+  &__texts{
+    width: 438px;
+  }
+  &__text{
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,103 @@
+.footer{
+  &__top{
+    padding: 50px 0 60px;
+  }
+  &__tel{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    margin-top: 24px;
+    color: #000;
+  }
+  &__time{
+    display: block;
+    margin-top: 8px;
+  }
+  &__row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  &__item{
+    display: block;
+    margin-top: 5px;
+    &:first-child{
+      margin-top: 0;
+    }
+  }
+  &__link{
+    font-size: 14px;
+    color: #000;
+  }
+  &__listDisc{
+    padding-left: 20px;
+    margin: 0;
+  }
+  &__itemDisc{
+    margin-top: 5px;
+    list-style: disc;
+    &:first-child{
+      margin-top: 0;
+    }
+  }
+  &__sochials{
+    display: flex; 
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  &__sochialText{
+    font-size: 14px;
+  }
+  &__sochialItem{
+    margin-left: 12px;
+  }
+  &__sochialList{
+    margin-left: 10px;
+  }
+  &__sochialLink{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+  }
+  &__sochialList{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__sochialIcon{
+    path{
+      transition: 0.3s;
+    }
+  }
+  &__sochialLink{
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover{
+      background: #000;
+      .footer__sochialIcon{
+        path{
+          fill: #fff;
+        }
+      }
+    }
+  }
+  &__bottom{
+    padding: 20px 0 26px;
+    border-top: 1px solid $border-light;
+  }
+  &__about{
+    width: 100%;
+    max-width: 930px;
+    margin: 0 auto;
+    display: block;
+    font-size: 14px;
+    text-align: center;
+  }
+}

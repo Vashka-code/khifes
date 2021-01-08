@@ -1,0 +1,44 @@
+.catalogPopup{
+  padding: 22px 12px;
+  background: #fff;
+  transition: 0.3s;
+  width: 100%;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: left center;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.4);
+  &.active{
+    opacity: 1;
+    transform: scaleX(1);
+  }
+  &__titles{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  &__text{
+    font-weight: 600;
+    font-size: 18px;
+    color: #000000;
+    font-family: $secondFont;
+  }
+  &__list{
+    margin-top: 15px;
+  }
+  &__item{
+    border-top: 1px solid $border-lighter;
+    &:last-child{
+      border-bottom: 1px solid $border-lighter;
+    }
+  }
+  &__link{
+    display: block;
+    padding: 12px 15px;
+  }
+}

@@ -1,0 +1,96 @@
+.comparison{
+  padding: 20px 0 80px;
+  &__options{
+    width: 184px;
+  }
+  &__option{
+    padding: 7px 9px;
+    border-bottom: 1px solid $neutral-secondary;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  &__slide{
+    width: 206px;
+  }
+  &__tableSlider{
+    width: calc(100% - 184px);
+    position: relative;
+  }
+  &__table{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 57px;
+  }
+  &__delete{
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+  &__deleteIcon{
+    display: block;
+    margin-right: 7px;
+  }
+  &__deleteText{
+    font-weight: 600;
+    font-size: 12px;
+  }
+  &__imgBlock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+    width: 100%;
+    height: 188px;
+  }
+  &__img{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  &__name{
+    margin-top: 12px;
+  }
+  &__titles{
+    font-weight: 600;
+    font-size: 13px;
+    &_blue{
+      color: $primary-color;
+    }
+  }
+  &__price{
+    font-family: $secondFont;
+    font-weight: bold;
+    font-size: 24px;
+    color: #000000;
+  }
+  &__optionText{
+    font-size: 14px;
+    font-weight: normal;
+    color: $neutral-regular;
+  }
+  &__buttonBaket{
+    margin-top: 12px;
+  }
+  &__prev{
+    transform: rotate(180deg);
+    top: -40px;
+    left: auto;
+    right: 80px;
+    &:after{
+      display: none;
+    }
+  }
+  &__next{
+    top: -40px;
+    right: 0;
+    &:after{
+      display: none;
+    }
+  }
+}

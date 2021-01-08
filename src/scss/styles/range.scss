@@ -1,0 +1,63 @@
+.irs{
+  margin-top: 10px;
+}
+
+.irs--flat .irs-handle{
+  width: 23px;
+  height: 16px;
+  background: #FCFCFC;
+  border: 1px solid #D9D9D9;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  &:hover{
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+    &>i:first-child{
+      background-color:  #c7c7c7;
+    }
+    &>i:nth-child(2){
+      background-color:  #c7c7c7;
+    }
+  }
+}
+.irs--flat .irs-handle.state_hover{
+  &>i:first-child{
+    background-color:  #c7c7c7;
+  }
+  &>i:nth-child(2){
+    background-color:  #c7c7c7;
+  }
+}
+
+
+.irs--flat .irs-handle>i:first-child {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 7px;
+  width: 1px;
+  height: 9px;
+  background-color:  #D9D9D9;
+}
+.irs--flat .irs-handle>i:nth-child(2) {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 7px;
+  width: 1px;
+  height: 9px;
+  background-color:  #D9D9D9;
+}
+
+.irs--flat .irs-bar{
+  background: $primary-color;
+}
+.irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single{
+  background: $primary-color;
+}
+.irs--flat .irs-from:before, .irs--flat .irs-to:before, .irs--flat .irs-single:before {
+  border-top-color: $primary-color;
+}

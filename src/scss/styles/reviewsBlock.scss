@@ -1,0 +1,66 @@
+.reviewsBlock{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 30px 0 60px;
+  &__title{
+    color: #000;
+  }
+  &__slide{
+    width: 395px;
+    padding: 12px 0;
+  }
+  &__slider{
+    position: relative;
+    margin-top: 32px;
+  }
+  &__slideText{
+    background: #FFFFFF;
+    padding: 35px 15px 17px 21px;
+    position: relative;
+  }
+  &__quotation{
+    position: absolute;
+    left: 20px;
+    top: -13px;
+  }
+  &__text{
+    font-size: 14px;
+  }
+  &__more{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 13px;
+    text-decoration-line: underline;
+    color: $primary-color;
+    display: block;
+    margin-top: 8px;
+  }
+  &__datas{
+    display: block;
+    margin-left: 30px;
+    margin-top: 14px;
+  }
+  &__name{
+    font-weight: bold;
+    font-size: 16px;
+    color: #000000;
+  }
+  &__data{
+    font-size: 14px;
+    color: #555555;
+    display: block;
+  }
+  &__down{
+    position: absolute;
+    right: 58px;
+    bottom: -33px;
+  }
+  &__button{
+    text-transform: uppercase;
+    margin-top: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 284px;
+  }
+}

@@ -1,0 +1,106 @@
+.indexSlider{
+  position: relative;
+  &__slide{
+    padding: 60px 0 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 1px solid #2E9CD3;
+  }
+  &__pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 25px!important;
+    .swiper-pagination-bullet{
+      margin: 0 6px!important;
+      border-radius: 0px;
+      background: transparent;
+      opacity: 1;
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:hover{
+        &:after{
+          background: $primary-color;
+        }
+      }
+      &:after{
+        width: 12px;
+        height: 12px;
+        content: '';
+        background: #fff;
+        display: block;
+        transition: 0.3s;
+      }
+    }
+    .swiper-pagination-bullet-active{
+      width: 20px;
+      height: 20px;
+      background: $primary-color;
+      &:after{
+        display: none;
+      }
+    }
+  }
+  &__title{
+    font-family: $secondFont;
+    font-weight: bold;
+    font-size: 45px;
+    text-transform: uppercase;
+    color: #fff;
+    width: 100%;
+    max-width: 550px;
+  }
+  &__button{
+    margin-top: 45px;
+  }
+  &__wrappers{
+    position: absolute;
+    bottom: 25px;
+    z-index: 6;
+    left: calc((100% - 1110px)/2);
+  }
+  &__mouseText{
+    font-size: 11px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    display: block;
+    margin-left: 18px;
+  }
+  &__mouse{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__mouseIcon{
+    animation: mouse  0.8s infinite linear;
+    animation-direction: alternate;
+  }
+  &__arrDown{
+    display: block;
+    margin-top: 5px;
+  }
+  &__arrsDown{
+    margin-top: 12px;
+    margin-left: 4px;
+  }
+}
+
+
+
+
+@keyframes mouse {
+  0% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(10%);
+  }
+}
+
+
+

@@ -1,0 +1,53 @@
+/* Vars:
+   ========================================================================== */
+
+// Font
+$mainFont : 'Open Sans', sans-serif;
+$secondFont : 'El Messiri', sans-serif;
+
+// Size
+$mainFontColor : #000;
+$mainFontSize            : 18px;
+$mainFontWeight          : 400;
+$mainLineHeight : 1.375;
+
+$desktopWidth : 1370px;
+$smDesktopWidth : 1024px;
+$tableWidth : 768px;
+$smTableWidth : 640px;
+$phoneWidth : 480px;
+$smPhoneWidth            : 320px;
+
+
+// wrappers
+$wrapperWidth: 1210px;
+$wrapperMiddleWidth: 1110px;
+
+
+/*
+ All colors taken from:
+ https://github.com/vedees/uimini
+*/
+
+// Main color
+$default-color           : #ffffff;
+$primary-color : #4CB0F8;
+$primary-color-hover : #449edf;
+$success-color           : #26de81;
+$danger-color : #ff0000;
+$warning-color           : #fed330;
+$light-color             : #999999;
+$purple-color            : #8854d0;
+
+// Neutral Color
+$neutral-primary : #434343;
+$neutral-regular : #555555;
+$neutral-secondary : #E3E3E3;
+$neutral-placeholder : #F8FAFB;
+
+// Border Color
+$border-base : #BEBDBD;
+$border-base-hover : #a8a8a8;
+$border-light : #C4C4C4;
+$border-lighter : #E7E7E7;
+$border-lightex : #E2E2E2;

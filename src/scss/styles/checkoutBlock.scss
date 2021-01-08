@@ -1,0 +1,328 @@
+.checkoutBlock{
+  padding: 20px 0 90px;
+  &__content{
+    margin-top: 73px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  &__tabContents{
+    counter-reset: checkoutBlock;
+  }
+  &__tabContent{
+    position: relative;
+    padding-left: 55px;
+    margin-top: 55px;
+    width: 640px;
+    &_finally{
+      display: none;
+    }
+    &:first-child{
+      margin-top: 0;
+    }
+    &::before{
+      position: absolute;
+      left: 0;
+      top: -8px;
+      content: counter(checkoutBlock);
+      counter-increment: checkoutBlock;
+      display: block;
+      width: 37px;
+      height: 37px;
+      border-radius: 50%;
+      background: #D7D6D6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: 20px;
+      color: #FFFFFF;
+    }
+  }
+  &__titles{
+    font-weight: bold;
+    font-size: 20px;
+    font-family: $secondFont;
+  }
+  &__inputBlock{
+    margin-top: 18px;
+  }
+  &__text{
+    font-size: 14px;
+    color: #000000;
+  }
+  &__types{
+    display: block;
+  }
+  &__city{
+    color: #000;
+    border-bottom: 1px dashed #000;
+  }
+  &__checks{
+    margin-top: 16px;
+  }
+  &__check{
+    margin-top: 16px;
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    max-width: 480px;
+    &_nowrap{
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__checkInput{
+    display: none;
+    &:checked + .checkoutBlock__checkCircle{
+      border: 1px solid $primary-color;
+      &::before{
+        background: $primary-color;
+      }
+    }
+  }
+  &__checkCircle{
+    width: 14px;
+    height: 14px;
+    background: #FFFFFF;
+    border: 1px solid #767676;
+    transition: 0.3s;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &::before{
+      content: '';
+      display: block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #fff;
+      transition: 0.3s;
+    }
+  }
+  &__textPar{
+    margin-left: 14px;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    position: relative;
+    &_wrap{
+      flex-wrap: wrap;
+    }
+  }
+  &__checkLine{
+    flex-grow: 1;
+    border-bottom: 1px dotted #000;
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    width: 100%;
+  }
+  &__checkValue{
+    display: block;
+    font-weight: 600;
+    position: relative;
+    z-index: 2;
+    background: #fff;
+  }
+  &__checkType{
+    display: block;
+    position: relative;
+    z-index: 2;
+    background: #fff;
+  }
+  &__selectBlock{
+    margin-top: 35px;
+  }
+  &__select{
+    display: block;
+    margin-top: 8px;
+  }
+  &__selectRel{
+    position: relative;
+  }
+  &__selectIcon{
+    position: absolute;
+  }
+  &__select{
+    appearance: none;
+  }
+  &__selectRel{
+    position: relative;
+    width: 100%;
+    max-width: 480px;
+  }
+  &__selectIcon{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 17px;
+    margin: auto;
+    pointer-events: none;
+  }
+  &__about{
+    display: block;
+    margin-top: 20px;
+    &_mob{
+      display: none;
+    }
+  }
+  &__link{
+    text-decoration: underline;
+    color: #000;
+  }
+  &__tabButton{
+    margin-top: 60px;
+    width: 290px;
+    text-transform: uppercase;
+  }
+  &__yourOrder{
+    width: 395px;
+    background: $neutral-secondary;
+    padding: 27px 25px 55px;
+  }
+  &__yourTitle{
+    font-weight: bold;
+    font-size: 24px;
+    color: #000000;
+    font-family: $secondFont;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 18px;
+    position: relative;
+    &:after{
+      width: 80%;
+      content: '';
+      height: 1px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      background: #000;
+    }
+  }
+  &__all{
+    display: block;
+    margin-top: 26px;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+  }
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 18px;
+  }
+  &__price{
+    display: block;
+    text-decoration: none;
+  }
+  &__item{
+    width: 142px;
+    text-align: center;
+  }
+  &__img{
+    max-width: 100%;
+    height: auto;
+  }
+  &__itemLink{
+    text-decoration: none;
+  }
+  &__edit{
+    display: flex;
+    margin-top: 80px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__editText{
+    border-bottom: 1px dashed #000;
+    color: #000;
+    display: block;
+    margin-left: 5px;
+  }
+  &__total{
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__totalText{
+    font-weight: 600;
+  }
+  &__totalPrice{
+    display: block;
+    font-weight: bold;
+    font-size: 36px;
+    font-family: $secondFont;
+    margin-left: 68px;
+  }
+  &__infOrder{
+    display: none;
+  }
+  &__infOrderText{
+    font-family: $secondFont;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  &__infOrderTitle{
+    font-family: $secondFont;
+    font-weight: bold;
+    font-size: 17px;
+  }
+  &__btns{
+    display: none;
+  }
+  &__tabs{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    position: relative;
+    display: none;
+    &:after{
+      content: '';
+      display: block;
+      width: 90%;
+      top: 7px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      height: 1px;
+      background: #DCDBDB;
+      z-index: 1;
+    }
+  }
+  &__tabCircle{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #8B8B8B;
+    background: #fff;
+    &.active{
+      border: 1px solid $primary-color;
+    }
+    &.true{
+      border: 1px solid $primary-color;
+      background: $primary-color;
+    }
+  }
+  &__tab{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__tabText{
+    margin-top: 10px;
+    display: block;
+    font-size: 14px;
+  }
+}

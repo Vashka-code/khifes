@@ -1,0 +1,9 @@
+.clock{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  &__text{
+    display: block;
+    margin-left: 10px;
+  }
+}

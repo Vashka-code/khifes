@@ -1,0 +1,123 @@
+.deliveryBlock{
+  padding: 22px 0 138px;
+  &__infTitle{
+    font-weight: bold;
+    font-size: 18px;
+    color: #000000;
+  }
+  &__infs{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 68px;
+  }
+  &__inf{
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__iconBlock{
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+  }
+  &__infTitle{
+    display: block;
+    margin-top: 16px;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: $secondFont;
+    width: 80%;
+  }
+  &__infAdress{
+    font-weight: bold;
+    font-size: 14px;
+    font-family: $secondFont;
+    width: 80%;
+    display: block;
+  }
+  &__infText{
+    margin-top: 16px;
+  }
+  &__block{
+    margin-top: 58px;
+    &_2{
+      margin-top: 122px;
+    }
+  }
+  &__titles{
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+  }
+  &__texts, &__checks{
+    margin-top: 20px;
+  }
+  &__check{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+  }
+  &__checkIcon{
+    display: block;
+    margin-right: 12px;
+  }
+  &__checkText{
+    flex-grow: 1;
+  }
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 80px;
+  }
+  &__item{
+    width: 48%;
+  }
+  &__itemTitles{
+    display: flex;
+    align-items: center;
+    padding: 16px 0;
+    border-bottom: 1px dashed #000;
+  }
+  &__itemTitle{
+    text-transform: uppercase;
+    width: 60%;
+    line-height: 100%;
+  }
+  &__icon{
+    display: block;
+    margin-right: 22px;
+  }
+  &__itemtitleBottom{
+    margin-top: 30px;
+    text-transform: uppercase;
+    border-bottom: 1px dashed #000;
+    font-weight: normal;
+  }
+  &__itemLink{
+    text-decoration: underline;
+  }
+  &__companys{
+    margin-top: 136px;
+    max-width: 852px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__companysList{
+    margin-top: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin-left: -18px;
+  }
+  &__items{
+    margin-top: 22px;
+    margin-left: 18px;  
+  }
+}

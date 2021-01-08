@@ -1,0 +1,38 @@
+.pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .swiper-pagination-bullet{
+    margin: 0 6px!important;
+    border-radius: 0px;
+    background: transparent;
+    opacity: 1;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover{
+      &:after{
+        background: $primary-color;
+      }
+    }
+    &:after{
+      width: 12px;
+      height: 12px;
+      content: '';
+      background: $neutral-primary;
+      display: block;
+      transition: 0.3s;
+    }
+  }
+  .swiper-pagination-bullet-active{
+    width: 20px;
+    height: 20px;
+    background: $primary-color;
+    &:after{
+      display: none;
+    }
+  }
+}

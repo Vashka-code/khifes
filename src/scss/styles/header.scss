@@ -1,0 +1,159 @@
+.header{
+  &__menuTop{
+    padding: 9px 0 24px;
+  }
+  &__infs{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__infMenu{
+    margin-left: 136px;
+  }
+  &__infList{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__infItem{
+    margin-left: 29px;
+    &:first-child{
+      margin-left: 0;
+    }
+  }
+  &__infLink{
+    color: #000;
+  }
+  &__funcs{
+    margin-top: 27px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  &__phone{
+    margin-left: 106px;
+  }
+  &__search{
+    margin-left: 66px;
+  }
+  &__funcLinks{
+    margin-left: auto;
+  }
+  &__funcList{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__funcItem{
+    position: relative;
+    &:last-child{
+      &:after{
+        display: none;
+      }
+    }
+    &:after{
+      content: '';
+      display: block;
+      height: 25px;
+      width: 1px;
+      background: $border-light;
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+    &_mob{
+      display: none;
+    }
+  }
+  &__funcLink{
+    display: block;
+    padding: 0 16px;
+    &_basket{
+      display: flex;
+      align-items: center;
+      .header__funcCircle{
+        right: 70px;
+      }
+    }
+  }
+  &__funcLinkSum{
+    font-weight: 600;
+    font-size: 10px;
+    text-transform: capitalize;
+    color: #000;
+  }
+  &__funcLinkNum{
+    font-size: 10px;
+    color: #000;
+    display: block;
+  }
+  &__funcLinkContent{
+    margin-left: 24px;
+    display: block;
+  }
+  &__funcCircle{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 1px;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background: $primary-color;
+    right: 5px;
+  }
+  &__menuBottom{
+    padding: 20px 0;
+    background: #000;
+  }
+  &__link{
+    color: #fff;
+    font-size: 16px;
+    font-family: $secondFont;
+    transition: 0.3s;
+    &:hover{
+      color: rgb(228, 228, 228);
+    }
+  }
+  &__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -30px;
+    margin-top: -10px;
+  }
+  &__item{
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+  &__mobCatalogTitles{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__mobCatalogName{
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+    color: #FFFFFF;
+    font-family: $secondFont;
+    margin-left: 14px;
+    margin-top: 2px;
+  }
+  &__mobCatalogLink{
+    font-size: 20px;
+    color: #FFFFFF;
+    font-family: $secondFont;
+    font-weight: 400;
+    display: block;
+    margin-left: 22px;
+  }
+  &__mobCatalog{
+    display: none;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}

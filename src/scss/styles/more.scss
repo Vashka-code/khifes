@@ -1,0 +1,21 @@
+.more{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  &_abs{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  &__icon{
+    display: block;
+    margin-left: 15px;
+  }
+  &__text{
+    display: block;
+    font-weight: 600;
+    font-size: 18px;
+    color: #000000;
+    border-bottom: 1px dashed #000;
+  }
+}

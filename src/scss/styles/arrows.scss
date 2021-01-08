@@ -1,0 +1,32 @@
+.prev{
+  left: -70px;
+  width: 58px;
+  height: 58px;
+  background: transparent;
+  transition: 0.3s;
+  &:after{
+    color: $primary-color;
+  }
+  &:hover{
+    background: $primary-color;
+    &:after{
+      color: #fff;
+    }
+  }
+}
+.next{
+  right: -70px;
+  width: 58px;
+  height: 58px;
+  background: transparent;
+  transition: 0.3s;
+  &:after{
+    color: $primary-color;
+  }
+  &:hover{
+    background: $primary-color;
+    &:after{
+      color: #fff;
+    }
+  } 
+}

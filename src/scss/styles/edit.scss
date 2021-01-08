@@ -1,0 +1,15 @@
+.edit{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  &__text{
+    display: block;
+    margin-left: 7px;
+    font-size: 12px;
+    border-bottom: 1px dashed #000;
+  }
+  &__icon{
+    max-width: 15px;
+    height: auto;
+  }
+}

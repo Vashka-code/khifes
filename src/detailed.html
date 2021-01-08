@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<!-- /Fonts -->
+
+</head>
+<body>
+	<!-- Header -->
+	<header class="header">
+		<div class="header__menuTop">
+			<div class="wrapper">
+				<div class="header__infs">
+					<div class="clock">
+						<img src="./assets/img/clock.svg" alt="" class="clock__icon">
+						<span class="clock__text text_16">Пн-Вс 10:00-21:00</span>
+					</div>
+					<nav class="header__infMenu">
+						<ul class="null header__infList">
+							<li class="header__infItem">
+								<a href="#" class="header__infLink text_14">Москва</a>
+							</li>
+							<li class="header__infItem">
+								<a href="#" class="header__infLink text_14">Доставка и оплата</a>
+							</li>
+							<li class="header__infItem">
+								<a href="#" class="header__infLink text_14">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__funcs">
+					<div class="menuBtn">
+						<span></span>
+					</div>
+					<a href="/" class="logo header__logo">
+						<img src="./assets/img/logo.png" alt="" class="logo__img">
+					</a>
+					<div class="phone header__phone">
+						<a href="tel:+74953749940" class="phone__number">8 (495) 374-99-40</a>
+						<a href="#phonePopup" class="fancybox phone__order">Заказать обратный звонок</a>
+					</div>
+					<div class="search header__search">
+						<input type="text" class="search__input" placeholder="Поиск по сайту">
+						<button class="search__button">
+							<img src="./assets/img/magnifying-glass.svg" alt="" class="search__icon">
+						</button>
+					</div>
+					<div class="header__funcLinks">
+						<ul class="header__funcList null">
+							<li class="header__funcItem header__funcItem_mob">
+								<div class="search header__search header__search_mob">
+									<input type="text" class="search__input" placeholder="Поиск по сайту">
+									<button class="search__button search__button_mob">
+										<img src="./assets/img/magnifying-glass.svg" alt="" class="svg search__icon">
+									</button>
+								</div>
+							</li>
+							<li class="header__funcItem header__funcItem_mobAct">
+								<a href="#" class="header__funcLink">
+									<img src="./assets/img/user.svg" alt="" class="svg header__funcImg">
+								</a>
+							</li>
+							<li class="header__funcItem">
+								<a href="#" class="header__funcLink">
+									<img src="./assets/img/knifes.svg" alt="" class="svg header__funcImg">
+									<span class="header__funcCircle">
+										<span class="header__funcLinkNum">4</span>
+									</span>
+								</a>
+							</li>
+							<li class="header__funcItem">
+								<a href="#" class="header__funcLink">
+									<img src="./assets/img/heart.svg" alt="" class="header__funcImg">
+								</a>
+							</li>
+							<li class="header__funcItem header__funcItem_mobAct header__funcItem_basket">
+								<a href="#" class="header__funcLink header__funcLink_basket">
+									<img src="./assets/img/smart-cart.svg" alt="" class="svg header__funcImg">
+									<span class="header__funcCircle">
+										<span class="header__funcLinkNum">15</span>
+									</span>
+									<span class="header__funcLinkContent">
+										<span class="header__funcLinkSum">Сумма:</span>
+										<span class="header__funcLinkNum">45 335 ₽</span>
+									</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__menuBottom">
+			<div class="wrapper">
+				<nav class="header__nav null">
+					<ul class="header__list null">
+						<li class="header__item">
+							<a href="#" class="header__link">Кухонные ножи</a>
+						</li>
+						<li class="header__item">
+							<a href="#" class="header__link">Ножи с фиксированным клинком</a>
+						</li>
+						<li class="header__item">
+							<a href="#" class="header__link">Ножи складные</a>
+						</li>
+						<li class="header__item">
+							<a href="#" class="header__link">Тренировочные ножи</a>
+						</li>
+						<li class="header__item">
+							<a href="#" class="header__link">Аксессуары</a>
+						</li>
+						<li class="header__item">
+							<a href="#" class="header__link">Лопаты</a>
+						</li>
+						<li class="header__item">
+							<a href="#" class="header__link">Трости</a>
+						</li>
+						<li class="header__item">
+							<a href="#" class="header__link">Топоры</a>
+						</li>
+						<li class="header__item">
+							<a href="#" class="header__link">Мачетеаты</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__mobCatalog">
+					<div class="header__mobCatalogTitles">
+						<img src="./assets/img/catalogTrs.svg" alt="">
+						<span class="header__mobCatalogName">Каталог товаров</span>
+					</div>
+					<a href="#" class="header__mobCatalogLink">Контакты</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="burgerPopup">
+			<div class="burgerPopup__delete">
+				<img src="./assets/img/delete.svg" alt="">
+			</div>
+			<div class="search burgerPopup__search">
+				<input type="text" class="search__input search__input_burgerPopup" placeholder="Поиск по сайту">
+				<button class="search__button">
+					<img src="./assets/img/magnifying-glass.svg" alt="" class="search__icon">
+				</button>
+			</div>
+			<ul class="burgerPopup__list null">
+				<li class="burgerPopup__item">
+					<a href="#" class="burgerPopup__link">
+						<span class="burgerPopup__iconBlock">
+							<img src="./assets/img/map.svg" alt="" class="burgerPopup__icon">
+						</span>
+						<span class="burgerPopup__text">Москва</span>
+					</a>
+				</li>
+				<li class="burgerPopup__item">
+					<a href="#" class="burgerPopup__link">
+						<span class="burgerPopup__iconBlock">
+							<img src="./assets/img/catalogTrs.svg" alt="" class="burgerPopup__icon">
+						</span>
+						<span class="burgerPopup__text">Каталог товаров</span>
+					</a>
+				</li>
+				<li class="burgerPopup__item">
+					<a href="#" class="burgerPopup__link">
+						<span class="burgerPopup__iconBlock">
+							<img src="./assets/img/package.svg" alt="" class="burgerPopup__icon">
+						</span>
+						<span class="burgerPopup__text">Доставка и оплата</span>
+					</a>
+				</li>
+				<li class="burgerPopup__item">
+					<a href="#" class="burgerPopup__link">
+						<span class="burgerPopup__iconBlock">
+							<img src="./assets/img/phone.svg" alt="" class="burgerPopup__icon">
+						</span>
+						<span class="burgerPopup__text">Контакты</span>
+					</a>
+				</li>
+				<li class="burgerPopup__item">
+					<a href="#" class="burgerPopup__link">
+						<span class="burgerPopup__iconBlock">
+							<img src="./assets/img/knifes.svg" alt="" class="burgerPopup__icon">
+						</span>
+						<span class="burgerPopup__text">Сравнение</span>
+						<span class="burgerPopup__circle">
+							<span class="burgerPopup__number">4</span>
+						</span>
+					</a>
+				</li>
+				<li class="burgerPopup__item">
+					<a href="#" class="burgerPopup__link">
+						<span class="burgerPopup__iconBlock">
+							<img src="./assets/img/heart.svg" alt="" class="burgerPopup__icon">
+						</span>
+						<span class="burgerPopup__text">Избранное</span>
+					</a>
+				</li>
+			</ul>
+			<div class="phone burgerPopup__phone">
+				<a href="tel:+74953749940" class="phone__number">8 (495) 374-99-40</a>
+				<a href="#phonePopup" class="fancybox phone__order">Заказать обратный звонок</a>
+			</div>
+		</div>
+		<div class="catalogPopup">	
+			<div class="catalogPopup__titles">
+				<img src="./assets/img/back.svg" alt="" class="catalogPopup__delete">
+				<span class="catalogPopup__text">Каталог товаров</span>
+				<img src="./assets/img/delete.svg" alt="" class="catalogPopup__delete">
+			</div>
+			<ul class="catalogPopup__list null">
+				<li class="catalogPopup__item">
+					<a href="#" class="catalogPopup__link catalogPopup__text">Кухонные ножи</a>
+				</li>
+				<li class="catalogPopup__item">
+					<a href="#" class="catalogPopup__link catalogPopup__text">Ножи с фиксированным клинком</a>
+				</li>
+				<li class="catalogPopup__item">
+					<a href="#" class="catalogPopup__link catalogPopup__text">Ножи складные </a>
+				</li>
+				<li class="catalogPopup__item">
+					<a href="#" class="catalogPopup__link catalogPopup__text">Тренировочные ножи </a>
+				</li>
+				<li class="catalogPopup__item">
+					<a href="#" class="catalogPopup__link catalogPopup__text">Аксессуары </a>
+				</li>
+				<li class="catalogPopup__item">
+					<a href="#" class="catalogPopup__link catalogPopup__text">Лопаты </a>
+				</li>
+				<li class="catalogPopup__item">
+					<a href="#" class="catalogPopup__link catalogPopup__text">Биты  </a>
+				</li>
+				<li class="catalogPopup__item">
+					<a href="#" class="catalogPopup__link catalogPopup__text">Трости </a>
+				</li>
+				<li class="catalogPopup__item">
+					<a href="#" class="catalogPopup__link catalogPopup__text">Топоры </a>
+				</li>
+				<li class="catalogPopup__item">
+					<a href="#" class="catalogPopup__link catalogPopup__text">Мачете</a>
+				</li>
+			</ul>
+		</div>
+	</header>
+  <!-- /Header -->
+  
+
+	<!-- Main -->
+	<main class="main">
+    <section class="detailedBlock wrapper">
+      <div class="detailedBlock__content">
+        
+        <h2 class="null detailedBlock__name detailedBlock__name_mob">Нож складной «Voyager Extra Large Clip Point»</h2>
+        <div class="detailedBlock__slider">
+          <div class="swiper-container gallery-top detailedBlock__top">
+            <div class="swiper-wrapper detailedBlock__topWrapper">
+              <div class="swiper-slide detailedBlock__topSlide">
+                <img src="./assets/img/detailed.png" alt="" class="detailedBlock__topImg">
+              </div>
+              <div class="swiper-slide detailedBlock__topSlide">
+                <img src="./assets/img/detailed.png" alt="" class="detailedBlock__topImg">
+              </div>
+              <div class="swiper-slide detailedBlock__topSlide">
+                <img src="./assets/img/detailed.png" alt="" class="detailedBlock__topImg">
+              </div>
+              <div class="swiper-slide detailedBlock__topSlide">
+                <img src="./assets/img/detailed.png" alt="" class="detailedBlock__topImg">
+              </div>
+              <div class="swiper-slide detailedBlock__topSlide">
+                <img src="./assets/img/detailed.png" alt="" class="detailedBlock__topImg">
+              </div>
+              <div class="swiper-slide detailedBlock__topSlide">
+                <img src="./assets/img/detailed.png" alt="" class="detailedBlock__topImg">
+              </div>
+              <div class="swiper-slide detailedBlock__topSlide">
+                <img src="./assets/img/detailed.png" alt="" class="detailedBlock__topImg">
+              </div>
+              <div class="swiper-slide detailedBlock__topSlide">
+                <img src="./assets/img/detailed.png" alt="" class="detailedBlock__topImg">
+              </div>
+              <div class="swiper-slide detailedBlock__topSlide">
+                <img src="./assets/img/detailed.png" alt="" class="detailedBlock__topImg">
+              </div>
+              <div class="swiper-slide detailedBlock__topSlide">
+                <img src="./assets/img/detailed.png" alt="" class="detailedBlock__topImg">
+              </div>
+            </div>
+          </div>
+          <div class="detailedBlock__thumbsMain">
+            <div class="swiper-container gallery-thumbs detailedBlock__thumbs">
+              <div class="swiper-wrapper detailedBlock__thumbsWrapper">
+                <div class="swiper-slide detailedBlock__thumbsSlide">
+                  <img src="./assets/img/detailedThumb.png" alt="" class="detailedBlock__thumbsImg">
+                </div>
+                <div class="swiper-slide detailedBlock__thumbsSlide">
+                  <img src="./assets/img/detailedThumb.png" alt="" class="detailedBlock__thumbsImg">
+                </div>
+                <div class="swiper-slide detailedBlock__thumbsSlide">
+                  <img src="./assets/img/detailedThumb.png" alt="" class="detailedBlock__thumbsImg">
+                </div>
+                <div class="swiper-slide detailedBlock__thumbsSlide">
+                  <img src="./assets/img/detailedThumb.png" alt="" class="detailedBlock__thumbsImg">
+                </div>
+                <div class="swiper-slide detailedBlock__thumbsSlide">
+                  <img src="./assets/img/detailedThumb.png" alt="" class="detailedBlock__thumbsImg">
+                </div>
+                <div class="swiper-slide detailedBlock__thumbsSlide">
+                  <img src="./assets/img/detailedThumb.png" alt="" class="detailedBlock__thumbsImg">
+                </div>
+                <div class="swiper-slide detailedBlock__thumbsSlide">
+                  <img src="./assets/img/detailedThumb.png" alt="" class="detailedBlock__thumbsImg">
+                </div>
+                <div class="swiper-slide detailedBlock__thumbsSlide">
+                  <img src="./assets/img/detailedThumb.png" alt="" class="detailedBlock__thumbsImg">
+                </div>
+                <div class="swiper-slide detailedBlock__thumbsSlide">
+                  <img src="./assets/img/detailedThumb.png" alt="" class="detailedBlock__thumbsImg">
+                </div>
+                <div class="swiper-slide detailedBlock__thumbsSlide">
+                  <img src="./assets/img/detailedThumb.png" alt="" class="detailedBlock__thumbsImg">
+                </div>
+              </div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next detailedBlock__arrow detailedBlock__arrow_next"></div>
+            <div class="swiper-button-prev detailedBlock__arrow detailedBlock__arrow_prev"></div>
+          </div>
+        </div>
+        <div class="detailedBlock__datas">
+          <h2 class="null detailedBlock__name">Нож складной «Voyager Extra Large Clip Point»</h2>
+          <span class="detailedBlock__vendor">Артикул: CS_58PS</span>
+          <div class="detailedBlock__prices">
+            <span class="detailedBlock__price detailedBlock__price_new">8 750 р</span>
+            <span class="detailedBlock__price detailedBlock__price_old">7 750 р</span>
+          </div>
+          <div class="detailedBlock__count">
+            <span class="detailedBlock__countText">КОЛИЧЕСТВО:</span>
+            <div class="inputCount detailedBlock__inputCount">
+              <button class="inputCount__btn" data-direction='minus'>-</button>
+              <input type="text" readonly value="1" class="inputCount__input">
+              <button class="inputCount__btn" data-direction='plus'>+</button>
+            </div>
+            <div class="detailedBlock__countCheck">
+              <img src="./assets/img/check.svg" alt="" class="detailedBlock__countIcon">
+              <span class="detailedBlock__countInf">Есть в наличии</span>
+            </div>
+          </div>
+          <div class="detailedBlock__btns">
+            <button class="detailedBlock__btn button button_mini">В корзину</button>
+            <button class="detailedBlock__btn button button_grey">купить в один клик</button>
+          </div>
+          <div class="detailedBlock__dataTexts">
+            <p class="null detailedBlock__dataText detailedBlock__dataText_up">Гарантия минимальной цены</p>
+            <p class="null detailedBlock__dataText">Нашли дешевле? Снизим цену!</p>
+          </div>
+          <div class="detailedBlock__dataGrey">
+            <div class="detailedBlock__dataOrder">
+              Доставка в 
+              <a href="#" class="detailedBlock__dataCity">Кременчуг-Константиновское</a>
+            </div>
+            <ul class="null detailedBlock__dataList">
+              <li class="detailedBlock__dataItem">
+                <div class="detailedBlock__dataType">
+                  <span class="detailedBlock__dataTitle">САМОВЫВОЗ</span>
+                  <span class="detailedBlock__dataInf">По предварительному заказу</span>
+                </div>
+                <span class="detailedBlock__dataPrice detailedBlock__dataInf">0 руб.</span>
+              </li>
+              <li class="detailedBlock__dataItem">
+                <div class="detailedBlock__dataType">
+                  <span class="detailedBlock__dataTitle">КУРЬЕРОМ (1 рабочий день)</span>
+                  <span class="detailedBlock__dataInf">(300 руб. при покупке до 3500 руб.)</span>
+                </div>
+                <span class="detailedBlock__dataPrice detailedBlock__dataInf">0 руб.</span>
+              </li>
+              <li class="detailedBlock__dataItem">
+                <div class="detailedBlock__dataType">
+                  <span class="detailedBlock__dataTitle">КУРЬЕРОМ (сегодня)</span>
+                  <span class="detailedBlock__dataInf">(500 руб. при покупке до 3500 руб.)</span>
+                </div>
+                <span class="detailedBlock__dataPrice detailedBlock__dataInf">200 руб.</span>
+              </li>
+              <li class="detailedBlock__dataItem">
+                <div class="detailedBlock__dataType">
+                  <span class="detailedBlock__dataTitle">САМОВЫВОЗ ИЗ ПВЗ (1-2 рабочих дня)</span>
+                  <span class="detailedBlock__dataInfs">(300 руб. при покупке до 3500 руб.)</span>
+                </div>
+                <span class="detailedBlock__dataPrice detailedBlock__dataInf">0 руб.</span>
+              </li>
+            </ul>
+            <a href="#costCalculation" class="fancybox detailedBlock__more">Подробнее</a>
+          </div>
+        </div>
+      </div>
+      <div class="detailedBlock__about">
+        <div class="detailedBlock__characteristic">
+          <h2 class="null detailedBlock__aboutTitle">ХАРАКТЕРИСТИКИ <img src="./assets/img/downSelect.svg" alt="" class="svg detailedBlock__aboutDown"></h2>
+          <div class="detailedBlock__aboutContent">
+            <ul class="detailedBlock__aboutList null">
+              <li class="detailedBlock__aboutItem">
+                <span class="detailedBlock__aboutType detailedBlock__aboutText">Твердость (HRC)</span>
+                <span class="detailedBlock__aboutValue detailedBlock__aboutText bold">58-59</span>
+              </li>
+              <li class="detailedBlock__aboutItem">
+                <span class="detailedBlock__aboutType detailedBlock__aboutText">Тип обработки  клинка</span>
+                <span class="detailedBlock__aboutValue detailedBlock__aboutText bold">Satin finish</span>
+              </li>
+              <li class="detailedBlock__aboutItem">
+                <span class="detailedBlock__aboutType  detailedBlock__aboutText">Модел</span>
+                <span class="detailedBlock__aboutValue  detailedBlock__aboutText bold">Code 4</span>
+              </li>
+              <li class="detailedBlock__aboutItem">
+                <span class="detailedBlock__aboutType  detailedBlock__aboutText">Длина ножа (см)</span>
+                <span class="detailedBlock__aboutValue  detailedBlock__aboutText bold">21,59</span>
+              </li>
+              <li class="detailedBlock__aboutItem">
+                <span class="detailedBlock__aboutType  detailedBlock__aboutText">В сложенном виде (см)</span>
+                <span class="detailedBlock__aboutValue  detailedBlock__aboutText bold">12,7</span>
+              </li>
+              <li class="detailedBlock__aboutItem">
+                <span class="detailedBlock__aboutType  detailedBlock__aboutText">Длина клинка (см)</span>
+                <span class="detailedBlock__aboutValue  detailedBlock__aboutText bold">8,9</span>
+              </li>
+              <li class="detailedBlock__aboutItem">
+                <span class="detailedBlock__aboutType  detailedBlock__aboutText">Толщина лезвия (мм)</span>
+                <span class="detailedBlock__aboutValue  detailedBlock__aboutText bold">3,5</span>
+              </li>
+              <li class="detailedBlock__aboutItem">
+                <span class="detailedBlock__aboutType  detailedBlock__aboutText">Вес (гр)</span>
+                <span class="detailedBlock__aboutValue  detailedBlock__aboutText bold">21,86</span>
+              </li>
+              <li class="detailedBlock__aboutItem">
+                <span class="detailedBlock__aboutType detailedBlock__aboutText">Тип заточки</span>
+                <span class="detailedBlock__aboutValue detailedBlock__aboutText bold">Plain</span>
+              </li>
+              <li class="detailedBlock__aboutItem">
+                <span class="detailedBlock__aboutType detailedBlock__aboutText">Тип ножевого замка</span>
+                <span class="detailedBlock__aboutValue detailedBlock__aboutText bold">Tri-Ad Lock</span>
+              </li>
+              <li class="detailedBlock__aboutItem">
+                <span class="detailedBlock__aboutType detailedBlock__aboutText">Тип профиля клинка</span>
+                <span class="detailedBlock__aboutValue detailedBlock__aboutText bold">Spear-Point</span>
+              </li>
+              <li class="detailedBlock__aboutItem">
+                <span class="detailedBlock__aboutType detailedBlock__aboutText">Материал рукояти </span>
+                <span class="detailedBlock__aboutValue detailedBlock__aboutText bold">Анодированный алюминиевый сплав (6061 T-6 Aluminium) Hard Coat Anodizing (Type III)</span>
+              </li>
+              <li class="detailedBlock__aboutItem">
+                <span class="detailedBlock__aboutType detailedBlock__aboutText">Марка стали</span>
+                <span class="detailedBlock__aboutValue detailedBlock__aboutText bold">Порошковая сталь Crucible CPM S35VN</span>
+              </li>
+              <li class="detailedBlock__aboutItem">
+                <span class="detailedBlock__aboutType detailedBlock__aboutText">Назначение</span>
+                <span class="detailedBlock__aboutValue detailedBlock__aboutText bold">Every Day Carry (EDC)</span>
+              </li>
+              <li class="detailedBlock__aboutItem">
+                <span class="detailedBlock__aboutType detailedBlock__aboutText">Производитель</span>
+                <span class="detailedBlock__aboutValue detailedBlock__aboutText bold">Cold Steel США</span>
+              </li>
+              <li class="detailedBlock__aboutItem">
+                <span class="detailedBlock__aboutType detailedBlock__aboutText">Страна изготовления</span>
+                <span class="detailedBlock__aboutValue detailedBlock__aboutText bold">Тайвань</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="detailedBlock__desc">
+          <h2 class="null detailedBlock__aboutTitle">ОПИСАНИЕ <img src="./assets/img/downSelect.svg" alt="" class="svg detailedBlock__aboutDown"></h2>
+          <div class="detailedBlock__aboutContent">
+            <p class="null detailedBlock__aboutText detailedBlock__text">Складной нож Сold Steel Code 4 Spear Point - уникально тонкий образец городского тактика от гиганта ножевой индустрии. EDC-нож с премиальной сталью на клинке, имеет плоскую рукоять (всего 9мм), поэтому всегда остаётся не заметным в кармане. Обладает отличной механикой и является достойным примером бескомпромиссного американского качества.</p>
+            <h2 class="null detailedBlock__aboutMinTitle">Чем интересна модель Колд Стил Код 4 Спир Поинт:</h2>
+            <ul class="detailedBlock__checkList null">
+              <li class="detailedBlock__itemCheck">
+                <img src="./assets/img/check.svg" alt="" class="detailedBlock__iconCheck">
+                <p class="null detailedBlock__aboutText detailedBlock__textCheck">За счёт профиля Spear-Point и фальшлезвия клинок демонстрирует отличную проникающую способность.</p>
+              </li>
+              <li class="detailedBlock__itemCheck">
+                <img src="./assets/img/check.svg" alt="" class="detailedBlock__iconCheck">
+                <p class="null detailedBlock__aboutText detailedBlock__textCheck">Вогнутые спуски обеспечивают просто "вкусный" рез.</p>
+              </li>
+              <li class="detailedBlock__itemCheck">
+                <img src="./assets/img/check.svg" alt="" class="detailedBlock__iconCheck">
+                <p class="null detailedBlock__aboutText detailedBlock__textCheck">Открытие посредством двухсторонних шпенёк удобное для любой руки.</p>
+              </li>
+              <li class="detailedBlock__itemCheck">
+                <img src="./assets/img/check.svg" alt="" class="detailedBlock__iconCheck">
+                <p class="null detailedBlock__aboutText detailedBlock__textCheck">Рукоять выполнена без стальных лайнеров, что значимо снизило её вес. При этом её прочность уникальна - выдерживает до 113кг.</p>
+              </li>
+              <li class="detailedBlock__itemCheck">
+                <img src="./assets/img/check.svg" alt="" class="detailedBlock__iconCheck">
+                <p class="null detailedBlock__aboutText detailedBlock__textCheck">Для рукояти использован авиационный алюминий с анодированием.</p>
+              </li>
+              <li class="detailedBlock__itemCheck">
+                <img src="./assets/img/check.svg" alt="" class="detailedBlock__iconCheck">
+                <p class="null detailedBlock__aboutText detailedBlock__textCheck">Самый крепкий фирменный замок Tri-Ad Lock позволяет держать немыслимые нагрузки нагрузки на складывание.</p>
+              </li>
+              <li class="detailedBlock__itemCheck">
+                <img src="./assets/img/check.svg" alt="" class="detailedBlock__iconCheck">
+                <p class="null detailedBlock__aboutText detailedBlock__textCheck">Стальная полированная клипса может переставляться на любую сторону.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+		<section class="videoBlock wrapper">
+			<h2 class="null title title_ml">Видео</h2>
+			<div class="videoBlock__slider">
+				<div class="videoBlock__gallery">
+					<div class="swiper-container videoBlock__top gallery-top">
+						<div class="swiper-wrapper videoBlock__wrapper">
+							<div class="swiper-slide videoBlock__slide">
+								<a href="https://youtu.be/C-wKYkBZGTI" class="videoBlock__link fancybox">
+									<img src="./assets/img/videoBlockSlide.png" alt="" class="videoBlock__slideImg">
+									<div class="videoBlock__playBtn">
+										<img src="./assets/img/play.svg" alt="" class="videoBlock__playIcon">
+									</div>
+								</a>
+							</div>
+							<div class="swiper-slide videoBlock__slide">
+								<a href="https://youtu.be/C-wKYkBZGTI" class="videoBlock__link fancybox">
+									<img src="./assets/img/videoBlockSlide.png" alt="" class="videoBlock__slideImg">
+									<div class="videoBlock__playBtn">
+										<img src="./assets/img/play.svg" alt="" class="videoBlock__playIcon">
+									</div>
+								</a>
+							</div>
+							<div class="swiper-slide videoBlock__slide">
+								<a href="https://youtu.be/C-wKYkBZGTI" class="videoBlock__link fancybox">
+									<img src="./assets/img/videoBlockSlide.png" alt="" class="videoBlock__slideImg">
+									<div class="videoBlock__playBtn">
+										<img src="./assets/img/play.svg" alt="" class="videoBlock__playIcon">
+									</div>
+								</a>
+							</div>
+							<div class="swiper-slide videoBlock__slide">
+								<a href="https://youtu.be/C-wKYkBZGTI" class="videoBlock__link fancybox">
+									<img src="./assets/img/videoBlockSlide.png" alt="" class="videoBlock__slideImg">
+									<div class="videoBlock__playBtn">
+										<img src="./assets/img/play.svg" alt="" class="videoBlock__playIcon">
+									</div>
+								</a>
+							</div>
+							<div class="swiper-slide videoBlock__slide">
+								<a href="https://youtu.be/C-wKYkBZGTI" class="videoBlock__link fancybox">
+									<img src="./assets/img/videoBlockSlide.png" alt="" class="videoBlock__slideImg">
+									<div class="videoBlock__playBtn">
+										<img src="./assets/img/play.svg" alt="" class="videoBlock__playIcon">
+									</div>
+								</a>
+							</div>
+							<div class="swiper-slide videoBlock__slide">
+								<a href="https://youtu.be/C-wKYkBZGTI" class="videoBlock__link fancybox">
+									<img src="./assets/img/videoBlockSlide.png" alt="" class="videoBlock__slideImg">
+									<div class="videoBlock__playBtn">
+										<img src="./assets/img/play.svg" alt="" class="videoBlock__playIcon">
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="pagination videoBlock__pagination swiper-pagination"></div>
+					</div>
+				</div>
+				<div class="videoBlock__thumbsBl">
+					<div class="swiper-container videoBlock__thumbs gallery-thumbs">
+						<div class="swiper-wrapper videoBlock__thumbWrapper">
+							<div class="swiper-slide videoBlock__thumb">
+								<img src="./assets/img/videoBlockThumb.png" alt="" class="videoBlock__thumbImg">
+							</div>
+							<div class="swiper-slide videoBlock__thumb">
+								<img src="./assets/img/videoBlockThumb.png" alt="" class="videoBlock__thumbImg">
+							</div>
+							<div class="swiper-slide videoBlock__thumb">
+								<img src="./assets/img/videoBlockThumb.png" alt="" class="videoBlock__thumbImg">
+							</div>
+							<div class="swiper-slide videoBlock__thumb">
+								<img src="./assets/img/videoBlockThumb.png" alt="" class="videoBlock__thumbImg">
+							</div>
+							<div class="swiper-slide videoBlock__thumb">
+								<img src="./assets/img/videoBlockThumb.png" alt="" class="videoBlock__thumbImg">
+							</div>
+							<div class="swiper-slide videoBlock__thumb">
+								<img src="./assets/img/videoBlockThumb.png" alt="" class="videoBlock__thumbImg">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+    <section class="goodsThisBlock wrapper">
+      <h2 class="title null">Tовары этой категории</h2>
+      <div class="knifeSliderMini recommendationBlock__knifeSlider">
+        <div class="swiper-container knifeSlider__container">
+          <div class="swiper-wrapper knifeSlider__wrapper">
+            <a href="#" class="swiper-slide knifeProduct knifeProduct_mini">
+              <img src="./assets/img/sliderKnife.png" alt="" class="knifeProduct__img">
+              <div class="knifeProduct__textContent">
+                <span class="knifeProduct__name">Нож складной «Voyager Extra Large Clip Point»</span>
+                <div class="knifeProduct__infs">
+                  <div class="knifeProduct__price">
+                    <span class="knifeProduct__priceNew">8 750 р</span>	
+                    <span class="knifeProduct__priceOld">7 750 р</span>
+                  </div>
+                  <div class="knifeProduct__inf">
+                    <div class="knifeProduct__iconBlock">
+                      <img src="./assets/img/smart-cart.svg" alt="" class="knifeProduct__icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="swiper-slide knifeProduct knifeProduct_mini">
+              <img src="./assets/img/sliderKnife.png" alt="" class="knifeProduct__img">
+              <div class="knifeProduct__textContent">
+                <span class="knifeProduct__name">Нож складной «Voyager Extra Large Clip Point»</span>
+                <div class="knifeProduct__infs">
+                  <div class="knifeProduct__price">
+                    <span class="knifeProduct__priceNew">8 750 р</span>	
+                    <span class="knifeProduct__priceOld">7 750 р</span>
+                  </div>
+                  <div class="knifeProduct__inf">
+                    <div class="knifeProduct__iconBlock">
+                      <img src="./assets/img/smart-cart.svg" alt="" class="knifeProduct__icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="swiper-slide knifeProduct knifeProduct_mini">
+              <img src="./assets/img/sliderKnife.png" alt="" class="knifeProduct__img">
+              <div class="knifeProduct__textContent">
+                <span class="knifeProduct__name">Нож складной «Voyager Extra Large Clip Point»</span>
+                <div class="knifeProduct__infs">
+                  <div class="knifeProduct__price">
+                    <span class="knifeProduct__priceNew">8 750 р</span>	
+                    <span class="knifeProduct__priceOld">7 750 р</span>
+                  </div>
+                  <div class="knifeProduct__inf">
+                    <div class="knifeProduct__iconBlock">
+                      <img src="./assets/img/smart-cart.svg" alt="" class="knifeProduct__icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="swiper-slide knifeProduct knifeProduct_mini">
+              <img src="./assets/img/sliderKnife.png" alt="" class="knifeProduct__img">
+              <div class="knifeProduct__textContent">
+                <span class="knifeProduct__name">Нож складной «Voyager Extra Large Clip Point»</span>
+                <div class="knifeProduct__infs">
+                  <div class="knifeProduct__price">
+                    <span class="knifeProduct__priceNew">8 750 р</span>	
+                    <span class="knifeProduct__priceOld">7 750 р</span>
+                  </div>
+                  <div class="knifeProduct__inf">
+                    <div class="knifeProduct__iconBlock">
+                      <img src="./assets/img/smart-cart.svg" alt="" class="knifeProduct__icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="swiper-slide knifeProduct knifeProduct_mini">
+              <img src="./assets/img/sliderKnife.png" alt="" class="knifeProduct__img">
+              <div class="knifeProduct__textContent">
+                <span class="knifeProduct__name">Нож складной «Voyager Extra Large Clip Point»</span>
+                <div class="knifeProduct__infs">
+                  <div class="knifeProduct__price">
+                    <span class="knifeProduct__priceNew">8 750 р</span>	
+                    <span class="knifeProduct__priceOld">7 750 р</span>
+                  </div>
+                  <div class="knifeProduct__inf">
+                    <div class="knifeProduct__iconBlock">
+                      <img src="./assets/img/smart-cart.svg" alt="" class="knifeProduct__icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="swiper-slide knifeProduct knifeProduct_mini">
+              <img src="./assets/img/sliderKnife.png" alt="" class="knifeProduct__img">
+              <div class="knifeProduct__textContent">
+                <span class="knifeProduct__name">Нож складной «Voyager Extra Large Clip Point»</span>
+                <div class="knifeProduct__infs">
+                  <div class="knifeProduct__price">
+                    <span class="knifeProduct__priceNew">8 750 р</span>	
+                    <span class="knifeProduct__priceOld">7 750 р</span>
+                  </div>
+                  <div class="knifeProduct__inf">
+                    <div class="knifeProduct__iconBlock">
+                      <img src="./assets/img/smart-cart.svg" alt="" class="knifeProduct__icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="swiper-slide knifeProduct knifeProduct_mini">
+              <img src="./assets/img/sliderKnife.png" alt="" class="knifeProduct__img">
+              <div class="knifeProduct__textContent">
+                <span class="knifeProduct__name">Нож складной «Voyager Extra Large Clip Point»</span>
+                <div class="knifeProduct__infs">
+                  <div class="knifeProduct__price">
+                    <span class="knifeProduct__priceNew">8 750 р</span>	
+                    <span class="knifeProduct__priceOld">7 750 р</span>
+                  </div>
+                  <div class="knifeProduct__inf">
+                    <div class="knifeProduct__iconBlock">
+                      <img src="./assets/img/smart-cart.svg" alt="" class="knifeProduct__icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="#" class="swiper-slide knifeProduct knifeProduct_mini">
+              <img src="./assets/img/sliderKnife.png" alt="" class="knifeProduct__img">
+              <div class="knifeProduct__textContent">
+                <span class="knifeProduct__name">Нож складной «Voyager Extra Large Clip Point»</span>
+                <div class="knifeProduct__infs">
+                  <div class="knifeProduct__price">
+                    <span class="knifeProduct__priceNew">8 750 р</span>	
+                    <span class="knifeProduct__priceOld">7 750 р</span>
+                  </div>
+                  <div class="knifeProduct__inf">
+                    <div class="knifeProduct__iconBlock">
+                      <img src="./assets/img/smart-cart.svg" alt="" class="knifeProduct__icon">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+  
+  
+          <div class="knifeSlider__pagination pagination swiper-pagination"></div>
+        </div>
+        
+        <div class="swiper-button-next knifeSlider__next next"></div>
+        <div class="swiper-button-prev knifeSlider__prev prev"></div>
+      </div>
+    </section>
+    <section class="recommendationBlock wrapper">
+      <h2 class="title null">Рекомендуемые</h2>
+      <div class="knifeSlider recommendationBlock__knifeSlider">
+        <div class="swiper-container knifeSlider__container">
+          <div class="swiper-wrapper knifeSlider__wrapper">
+            <div class="swiper-slide knifeProduct">
+              <img src="./assets/img/sliderKnife.png" alt="" class="knifeProduct__img">
+              <div class="knifeProduct__textContent">
+                <span class="knifeProduct__name">Нож складной «Voyager Extra Large Clip Point»</span>
+                <p class="null knifeProduct__text">длина клинка: 13,2 см, материал клинка: сталь Aus 10, материал рукояти: Grivory, COLD STEEL, США</p>
+                <div class="knifeProduct__infs">
+                  <div class="knifeProduct__price">
+                    <span class="knifeProduct__priceNew">8 750 р</span>	
+                    <span class="knifeProduct__priceOld">7 750 р</span>
+                  </div>
+                  <div class="knifeProduct__inf">
+                    <span class="knifeProduct__availability">Есть в наличии</span>
+                    <ul class="knifeProduct__links null">
+                      <li class="knifeProduct__linkItem">
+                        <a href="#" class="knifeProduct__link">
+                          <div class="knifeProduct__iconBlock">
+                            <img src="./assets/img/knifes.svg" alt="" class="knifeProduct__icon">
+                          </div>
+                          <span class="knifeProduct__linkName">Сравнить</span>
+                        </a>
+                      </li>
+                      <li class="knifeProduct__linkItem">
+                        <a href="#" class="knifeProduct__link">
+                          <div class="knifeProduct__iconBlock">
+                            <img src="./assets/img/heart.svg" alt="" class="knifeProduct__icon">
+                          </div>
+                          <span class="knifeProduct__linkName">В избранное</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <button class="buttonBaket">В корзину <img src="./assets/img/smart-cart.svg" alt="" class="svg buttonBaket__buttonIcon"></button>
+            </div>
+            <div class="swiper-slide knifeProduct">
+              <img src="./assets/img/sliderKnife.png" alt="" class="knifeProduct__img">
+              <div class="knifeProduct__textContent">
+                <span class="knifeProduct__name">Нож складной «Voyager Extra Large Clip Point»</span>
+                <p class="null knifeProduct__text">длина клинка: 13,2 см, материал клинка: сталь Aus 10, материал рукояти: Grivory, COLD STEEL, США</p>
+                <div class="knifeProduct__infs">
+                  <div class="knifeProduct__price">
+                    <span class="knifeProduct__priceNew">8 750 р</span>	
+                    <span class="knifeProduct__priceOld">7 750 р</span>
+                  </div>
+                  <div class="knifeProduct__inf">
+                    <span class="knifeProduct__availability">Есть в наличии</span>
+                    <ul class="knifeProduct__links null">
+                      <li class="knifeProduct__linkItem">
+                        <a href="#" class="knifeProduct__link">
+                          <div class="knifeProduct__iconBlock">
+                            <img src="./assets/img/knifes.svg" alt="" class="knifeProduct__icon">
+                          </div>
+                          <span class="knifeProduct__linkName">Сравнить</span>
+                        </a>
+                      </li>
+                      <li class="knifeProduct__linkItem">
+                        <a href="#" class="knifeProduct__link">
+                          <div class="knifeProduct__iconBlock">
+                            <img src="./assets/img/heart.svg" alt="" class="knifeProduct__icon">
+                          </div>
+                          <span class="knifeProduct__linkName">В избранное</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <button class="buttonBaket">В корзину <img src="./assets/img/smart-cart.svg" alt="" class="svg buttonBaket__buttonIcon"></button>
+            </div>
+            <div class="swiper-slide knifeProduct">
+              <img src="./assets/img/sliderKnife.png" alt="" class="knifeProduct__img">
+              <div class="knifeProduct__textContent">
+                <span class="knifeProduct__name">Нож складной «Voyager Extra Large Clip Point»</span>
+                <p class="null knifeProduct__text">длина клинка: 13,2 см, материал клинка: сталь Aus 10, материал рукояти: Grivory, COLD STEEL, США</p>
+                <div class="knifeProduct__infs">
+                  <div class="knifeProduct__price">
+                    <span class="knifeProduct__priceNew">8 750 р</span>	
+                    <span class="knifeProduct__priceOld">7 750 р</span>
+                  </div>
+                  <div class="knifeProduct__inf">
+                    <span class="knifeProduct__availability">Есть в наличии</span>
+                    <ul class="knifeProduct__links null">
+                      <li class="knifeProduct__linkItem">
+                        <a href="#" class="knifeProduct__link">
+                          <div class="knifeProduct__iconBlock">
+                            <img src="./assets/img/knifes.svg" alt="" class="knifeProduct__icon">
+                          </div>
+                          <span class="knifeProduct__linkName">Сравнить</span>
+                        </a>
+                      </li>
+                      <li class="knifeProduct__linkItem">
+                        <a href="#" class="knifeProduct__link">
+                          <div class="knifeProduct__iconBlock">
+                            <img src="./assets/img/heart.svg" alt="" class="knifeProduct__icon">
+                          </div>
+                          <span class="knifeProduct__linkName">В избранное</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <button class="buttonBaket">В корзину <img src="./assets/img/smart-cart.svg" alt="" class="svg buttonBaket__buttonIcon"></button>
+            </div>
+            <div class="swiper-slide knifeProduct">
+              <img src="./assets/img/sliderKnife.png" alt="" class="knifeProduct__img">
+              <div class="knifeProduct__textContent">
+                <span class="knifeProduct__name">Нож складной «Voyager Extra Large Clip Point»</span>
+                <p class="null knifeProduct__text">длина клинка: 13,2 см, материал клинка: сталь Aus 10, материал рукояти: Grivory, COLD STEEL, США</p>
+                <div class="knifeProduct__infs">
+                  <div class="knifeProduct__price">
+                    <span class="knifeProduct__priceNew">8 750 р</span>	
+                    <span class="knifeProduct__priceOld">7 750 р</span>
+                  </div>
+                  <div class="knifeProduct__inf">
+                    <span class="knifeProduct__availability">Есть в наличии</span>
+                    <ul class="knifeProduct__links null">
+                      <li class="knifeProduct__linkItem">
+                        <a href="#" class="knifeProduct__link">
+                          <div class="knifeProduct__iconBlock">
+                            <img src="./assets/img/knifes.svg" alt="" class="knifeProduct__icon">
+                          </div>
+                          <span class="knifeProduct__linkName">Сравнить</span>
+                        </a>
+                      </li>
+                      <li class="knifeProduct__linkItem">
+                        <a href="#" class="knifeProduct__link">
+                          <div class="knifeProduct__iconBlock">
+                            <img src="./assets/img/heart.svg" alt="" class="knifeProduct__icon">
+                          </div>
+                          <span class="knifeProduct__linkName">В избранное</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <button class="buttonBaket">В корзину <img src="./assets/img/smart-cart.svg" alt="" class="svg buttonBaket__buttonIcon"></button>
+            </div>
+            <div class="swiper-slide knifeProduct">
+              <img src="./assets/img/sliderKnife.png" alt="" class="knifeProduct__img">
+              <div class="knifeProduct__textContent">
+                <span class="knifeProduct__name">Нож складной «Voyager Extra Large Clip Point»</span>
+                <p class="null knifeProduct__text">длина клинка: 13,2 см, материал клинка: сталь Aus 10, материал рукояти: Grivory, COLD STEEL, США</p>
+                <div class="knifeProduct__infs">
+                  <div class="knifeProduct__price">
+                    <span class="knifeProduct__priceNew">8 750 р</span>	
+                    <span class="knifeProduct__priceOld">7 750 р</span>
+                  </div>
+                  <div class="knifeProduct__inf">
+                    <span class="knifeProduct__availability">Есть в наличии</span>
+                    <ul class="knifeProduct__links null">
+                      <li class="knifeProduct__linkItem">
+                        <a href="#" class="knifeProduct__link">
+                          <div class="knifeProduct__iconBlock">
+                            <img src="./assets/img/knifes.svg" alt="" class="knifeProduct__icon">
+                          </div>
+                          <span class="knifeProduct__linkName">Сравнить</span>
+                        </a>
+                      </li>
+                      <li class="knifeProduct__linkItem">
+                        <a href="#" class="knifeProduct__link">
+                          <div class="knifeProduct__iconBlock">
+                            <img src="./assets/img/heart.svg" alt="" class="knifeProduct__icon">
+                          </div>
+                          <span class="knifeProduct__linkName">В избранное</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <button class="buttonBaket">В корзину <img src="./assets/img/smart-cart.svg" alt="" class="svg buttonBaket__buttonIcon"></button>
+            </div>
+            <div class="swiper-slide knifeProduct">
+              <img src="./assets/img/sliderKnife.png" alt="" class="knifeProduct__img">
+              <div class="knifeProduct__textContent">
+                <span class="knifeProduct__name">Нож складной «Voyager Extra Large Clip Point»</span>
+                <p class="null knifeProduct__text">длина клинка: 13,2 см, материал клинка: сталь Aus 10, материал рукояти: Grivory, COLD STEEL, США</p>
+                <div class="knifeProduct__infs">
+                  <div class="knifeProduct__price">
+                    <span class="knifeProduct__priceNew">8 750 р</span>	
+                    <span class="knifeProduct__priceOld">7 750 р</span>
+                  </div>
+                  <div class="knifeProduct__inf">
+                    <span class="knifeProduct__availability">Есть в наличии</span>
+                    <ul class="knifeProduct__links null">
+                      <li class="knifeProduct__linkItem">
+                        <a href="#" class="knifeProduct__link">
+                          <div class="knifeProduct__iconBlock">
+                            <img src="./assets/img/knifes.svg" alt="" class="knifeProduct__icon">
+                          </div>
+                          <span class="knifeProduct__linkName">Сравнить</span>
+                        </a>
+                      </li>
+                      <li class="knifeProduct__linkItem">
+                        <a href="#" class="knifeProduct__link">
+                          <div class="knifeProduct__iconBlock">
+                            <img src="./assets/img/heart.svg" alt="" class="knifeProduct__icon">
+                          </div>
+                          <span class="knifeProduct__linkName">В избранное</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <button class="buttonBaket">В корзину <img src="./assets/img/smart-cart.svg" alt="" class="svg buttonBaket__buttonIcon"></button>
+            </div>
+            <div class="swiper-slide knifeProduct">
+              <img src="./assets/img/sliderKnife.png" alt="" class="knifeProduct__img">
+              <div class="knifeProduct__textContent">
+                <span class="knifeProduct__name">Нож складной «Voyager Extra Large Clip Point»</span>
+                <p class="null knifeProduct__text">длина клинка: 13,2 см, материал клинка: сталь Aus 10, материал рукояти: Grivory, COLD STEEL, США</p>
+                <div class="knifeProduct__infs">
+                  <div class="knifeProduct__price">
+                    <span class="knifeProduct__priceNew">8 750 р</span>	
+                    <span class="knifeProduct__priceOld">7 750 р</span>
+                  </div>
+                  <div class="knifeProduct__inf">
+                    <span class="knifeProduct__availability">Есть в наличии</span>
+                    <ul class="knifeProduct__links null">
+                      <li class="knifeProduct__linkItem">
+                        <a href="#" class="knifeProduct__link">
+                          <div class="knifeProduct__iconBlock">
+                            <img src="./assets/img/knifes.svg" alt="" class="knifeProduct__icon">
+                          </div>
+                          <span class="knifeProduct__linkName">Сравнить</span>
+                        </a>
+                      </li>
+                      <li class="knifeProduct__linkItem">
+                        <a href="#" class="knifeProduct__link">
+                          <div class="knifeProduct__iconBlock">
+                            <img src="./assets/img/heart.svg" alt="" class="knifeProduct__icon">
+                          </div>
+                          <span class="knifeProduct__linkName">В избранное</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <button class="buttonBaket">В корзину <img src="./assets/img/smart-cart.svg" alt="" class="svg buttonBaket__buttonIcon"></button>
+            </div>
+            <div class="swiper-slide knifeProduct">
+              <img src="./assets/img/sliderKnife.png" alt="" class="knifeProduct__img">
+              <div class="knifeProduct__textContent">
+                <span class="knifeProduct__name">Нож складной «Voyager Extra Large Clip Point»</span>
+                <p class="null knifeProduct__text">длина клинка: 13,2 см, материал клинка: сталь Aus 10, материал рукояти: Grivory, COLD STEEL, США</p>
+                <div class="knifeProduct__infs">
+                  <div class="knifeProduct__price">
+                    <span class="knifeProduct__priceNew">8 750 р</span>	
+                    <span class="knifeProduct__priceOld">7 750 р</span>
+                  </div>
+                  <div class="knifeProduct__inf">
+                    <span class="knifeProduct__availability">Есть в наличии</span>
+                    <ul class="knifeProduct__links null">
+                      <li class="knifeProduct__linkItem">
+                        <a href="#" class="knifeProduct__link">
+                          <div class="knifeProduct__iconBlock">
+                            <img src="./assets/img/knifes.svg" alt="" class="knifeProduct__icon">
+                          </div>
+                          <span class="knifeProduct__linkName">Сравнить</span>
+                        </a>
+                      </li>
+                      <li class="knifeProduct__linkItem">
+                        <a href="#" class="knifeProduct__link">
+                          <div class="knifeProduct__iconBlock">
+                            <img src="./assets/img/heart.svg" alt="" class="knifeProduct__icon">
+                          </div>
+                          <span class="knifeProduct__linkName">В избранное</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <button class="buttonBaket">В корзину <img src="./assets/img/smart-cart.svg" alt="" class="svg buttonBaket__buttonIcon"></button>
+            </div>
+          </div>
+  
+  
+          <div class="knifeSlider__pagination pagination swiper-pagination"></div>
+        </div>
+        
+        <div class="swiper-button-next knifeSlider__next next"></div>
+        <div class="swiper-button-prev knifeSlider__prev prev"></div>
+      </div>
+    </section>
+		<section class="subscriptionBlock" style="background-image: url('./assets/img/subscriptionBlock.png');">
+			<div class="wrapper">
+				<h2 class="title subscriptionBlock__title null">Подписка на новости</h2>
+				<p class="null subscriptionBlock__text">Подпишись, чтобы получать информацию о эксклюзивных предложениях, поступлениях, событиях и многом другом</p>
+				<form action="#" class="subscriptionBlock__form">
+					<input type="text" class="subscriptionBlock__input" placeholder="Ваш e-maill">
+					<button type="submit" class="button subscriptionBlock__button">Подписаться</button>
+				</form>
+				<p class="subscriptionBlock__agree null">Подписываясь, Вы соглашаетесь с 
+					<a href="#" class="subscriptionBlock__agreeLink"> Политикой Конфиденциальности </a>  и
+					<a href="#" class="subscriptionBlock__agreeLink"> Условиями пользования </a>
+					COLD STEEL	
+				</p>
+			</div>
+    </section>
+	</main>
+	<!-- /Main -->
+
+  <!-- Popups -->
+  <div class="costCalculation" id="costCalculation">
+    <h2 class="null costCalculation__title title">Предварительный расчет стоимости доставки</h2>
+    <ul class="null costCalculation__list">
+      <li class="costCalculation__item">
+        <img src="./assets/img/send.png" alt="" class="costCalculation__img">
+        <div class="costCalculation__texts">
+          <p class="null costCalculation__titles bold costCalculation__text">Почта России (посылка 1-го класса со страховкой)</p>
+          <p class="null costCalculation__text">Стоимость доставки при наложенном платеже: 725 руб. доплата при получении: 437 руб.</p>
+        </div>
+        <span class="costCalculation__days costCalculation__text bold">1-2 дня</span>
+        <span class="costCalculation__price costCalculation__text bold">695 руб.</span>
+      </li>
+      <li class="costCalculation__item">
+        <img src="./assets/img/send.png" alt="" class="costCalculation__img">
+        <div class="costCalculation__texts">
+          <p class="null costCalculation__titles bold costCalculation__text">Почта России (посылка 1-го класса со страховкой)</p>
+          <p class="null costCalculation__text">Стоимость доставки при наложенном платеже: 725 руб. доплата при получении: 437 руб.</p>
+        </div>
+        <span class="costCalculation__days costCalculation__text bold">1-2 дня</span>
+        <span class="costCalculation__price costCalculation__text bold">695 руб.</span>
+      </li>
+      <li class="costCalculation__item">
+        <img src="./assets/img/send.png" alt="" class="costCalculation__img">
+        <div class="costCalculation__texts">
+          <p class="null costCalculation__titles bold costCalculation__text">Почта России (посылка 1-го класса со страховкой)</p>
+          <p class="null costCalculation__text">Стоимость доставки при наложенном платеже: 725 руб. доплата при получении: 437 руб.</p>
+        </div>
+        <span class="costCalculation__days costCalculation__text bold">1-2 дня</span>
+        <span class="costCalculation__price costCalculation__text bold">695 руб.</span>
+      </li>
+      <li class="costCalculation__item">
+        <img src="./assets/img/send.png" alt="" class="costCalculation__img">
+        <div class="costCalculation__texts">
+          <p class="null costCalculation__titles bold costCalculation__text">Почта России (посылка 1-го класса со страховкой)</p>
+          <p class="null costCalculation__text">Стоимость доставки при наложенном платеже: 725 руб. доплата при получении: 437 руб.</p>
+        </div>
+        <span class="costCalculation__days costCalculation__text bold">1-2 дня</span>
+        <span class="costCalculation__price costCalculation__text bold">695 руб.</span>
+      </li>
+      <li class="costCalculation__item">
+        <img src="./assets/img/send.png" alt="" class="costCalculation__img">
+        <div class="costCalculation__texts">
+          <p class="null costCalculation__titles bold costCalculation__text">Почта России (посылка 1-го класса со страховкой)</p>
+          <p class="null costCalculation__text">Стоимость доставки при наложенном платеже: 725 руб. доплата при получении: 437 руб.</p>
+        </div>
+        <span class="costCalculation__days costCalculation__text bold">1-2 дня</span>
+        <span class="costCalculation__price costCalculation__text bold">695 руб.</span>
+      </li>
+    </ul>
+  </div>
+  <div class="popup" id="phonePopup" style="background-image: url('./assets/img/popupBg.png');">
+    <h2 class="null popup__title title">Заказать звонок</h2>
+    <form action="#" class="popup__form">
+      <div class="inputBlock popup__inputBlock">
+        <span class="inputBlock__text checkoutBlock__text">Ваше имя</span>
+        <input type="text" class="input inputBlock__input">
+      </div>
+      <div class="inputBlock popup__inputBlock">
+        <span class="inputBlock__text checkoutBlock__text">Телефон <span class="red bold"> *</span></span>
+        <input type="text" class="input inputBlock__input">
+      </div>
+    </form>
+    <p class="popup__about null"><span class="red bold">*</span>  — поля, обязательные для заполнения.</p>
+    <button class="button popup__btn">отправить</button>
+  </div>
+  <!-- /Popups -->
+
+	<!-- Footer -->
+  <footer class="footer">
+		<div class="footer__top wrapper">
+			<div class="footer__row">
+				<div class="footer__column">
+					<a href="/" class="logo">
+						<img src="./assets/img/logo.png" alt="" class="logo__img">
+					</a>
+					<div class="footer__inf">
+						<a class="footer__tel" href="tel:+74953749940">8 (495) 374-99-40</a>
+						<span class="footer__time">ПН-ВС 10:00-21:00</span>
+					</div>
+				</div>
+				<div class="footer__column">
+					<ul class="footer__list null">
+						<li class="footer__item">
+							<a href="#" class="footer__link">Кухонные ножи</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link">Ножи с фиксированным клинком</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link">Ножи складные </a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link">Тренировочные ножи </a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link">Аксессуары</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__column">
+					<ul class="footer__list null">
+						<li class="footer__item">
+							<a href="#" class="footer__link">Лопаты </a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link">Биты</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link">Трости</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link">Топоры</a>
+						</li>
+						<li class="footer__item">
+							<a href="#" class="footer__link">Мачете</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__column">
+					<ul class="footer__listDisc ">
+						<li class="footer__itemDisc">
+							<a href="#" class="footer__link">Доставка</a>
+						</li>
+						<li class="footer__itemDisc">
+							<a href="#" class="footer__link">Оплата</a>
+						</li>
+						<li class="footer__itemDisc">
+							<a href="#" class="footer__link">Возврат товара</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__column">
+					<ul class="footer__listDisc ">
+						<li class="footer__itemDisc">
+							<a href="#" class="footer__link">Контакты</a>
+						</li>
+						<li class="footer__itemDisc">
+							<a href="#" class="footer__link">Карта сайта</a>
+						</li>
+						<li class="footer__itemDisc">
+							<a href="#" class="footer__link">Публичная оферта </a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__sochials">
+					<span class="footer__sochialText">Мы в соцсетях</span>
+					<ul class="null footer__sochialList">
+						<li class="footer__sochialItem">
+							<a href="#" class="footer__sochialLink">
+								<img src="./assets/img/vk.svg" alt="" class="svg footer__sochialIcon">
+							</a>
+						</li>
+						<li class="footer__sochialItem">
+							<a href="#" class="footer__sochialLink">
+								<img src="./assets/img/vk.svg" alt="" class="svg footer__sochialIcon">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom wrapper">
+			<span class="footer__about">Вся информация на сайте носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437(2) Гражданского кодекса РФ.</span>
+		</div>
+  </footer>
+	<!-- /Footer -->
+
+
+	
+</body>
+</html>

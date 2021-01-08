@@ -1,0 +1,46 @@
+.subscriptionBlock{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 50px 0 80px;
+  &__title{
+    color: #000;
+    &:after{
+      display: none;
+    }
+  }
+  &__text{
+    margin: 30px auto 0;
+    width: 100%;
+    max-width: 890px;
+    text-align: center;
+    font-size: 24px;
+  }
+  &__form{
+    margin: 30px auto 0;
+    width: 100%;
+    max-width: 764px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__input{
+    padding: 14px 36px;
+    background: #fff;
+    border: none;
+    outline: none;
+    width: 500px;
+    display: block;
+    font-size: 18px;
+    font-style: italic;
+  }
+  &__agree{
+    margin-top: 25px;
+    text-align: center;
+    font-size: 18px;
+  }
+  &__agreeLink{
+    color: #000;
+    text-decoration: underline;
+  }
+}

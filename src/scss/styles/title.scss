@@ -1,0 +1,26 @@
+.title{
+  font-family: $secondFont;
+  font-weight: bold;
+  font-size: 48px;
+  color: $neutral-regular;
+  position: relative;
+  text-align: center;
+  &::after{
+    content: '';
+    display: block;
+    width: 75px;
+    height: 4px;
+    background: $primary-color;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
+
+.titleText{
+  font-family: $secondFont;
+  font-weight: bold;
+  font-size: 24px;
+}

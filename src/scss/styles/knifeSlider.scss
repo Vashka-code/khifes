@@ -1,0 +1,19 @@
+.knifeSlider{
+  position: relative;
+  &_mini{
+    .knifeSlider__container{
+      padding-top: 10px;
+      padding-bottom: 30px;
+    } 
+  }
+  &__container{
+    padding: 0 10px;
+  }
+}
+.knifeSliderMini{
+  position: relative;
+  &__container{
+    padding-top: 10px;
+    padding-bottom: 30px;
+  } 
+}

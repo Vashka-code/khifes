@@ -1,0 +1,19 @@
+.phone{
+  transition: 0.3s;
+  &__number{
+    font-weight: bold;
+    font-size: 28px;
+    color: #000000;
+    font-family: $secondFont;
+  }
+  &__order{
+    font-size: 18px;
+    text-decoration: underline;
+    color: #000000;
+    display: block;
+    margin-top: -8px;
+  }
+  &.hide{
+    opacity: 0;
+  }
+}

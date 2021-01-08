@@ -1,0 +1,37 @@
+.share{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: #0F1221;
+  &__img{
+    width: 45%;
+    height: auto;
+    display: block;
+  }
+  &__content{
+    width: 55%;
+    padding: 0 70px;
+  }
+  &__attention{
+    font-size: 64px;
+    font-family: $secondFont;
+    color: $primary-color;
+  }
+  &__percent{
+    font-size: 120px;
+    font-family: $secondFont;
+    color: #FFFFFF;
+    display: block;
+  }
+  &__texts{
+    margin-top: 30px;
+  }
+  &__text{
+    font-size: 24px;
+    color: #FFFFFF;
+  }
+  &__button{
+    margin-top: 76px;
+    text-transform: uppercase;
+  }
+}

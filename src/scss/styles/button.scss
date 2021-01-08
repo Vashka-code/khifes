@@ -1,0 +1,30 @@
+.button{
+  width: 236px;
+  display: block;
+  padding: 13px 0;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: $primary-color;
+  font-size: 22px;
+  color: #FFFFFF;
+  transition: 0.3s;
+  &:hover{
+    background: $primary-color-hover;
+  }
+  &_mini{
+    width: 140px;
+    font-size: 14px;
+  }
+  &_grey{
+    width: 260px;
+    font-size: 14px;
+    background: #9F9F9F;
+    &:hover{
+      background: #858484;
+    }
+  }
+}
+
+

@@ -1,0 +1,79 @@
+.burgerPopup{
+  width: 100%;
+  background: #fff;
+  padding: 30px 20px;
+  display: none;
+  position: relative;
+  opacity: 0;
+  transition: 0.3s;
+  transform-origin: left center;
+  transform: scaleX(0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.4);
+  &.active{
+    opacity: 1;
+    transform: scaleX(1)
+  }
+  &__phone{
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  &__list{
+    margin-top: 18px;
+  }
+  &__item{
+    border-top: 1px solid $border-lighter;
+    &:last-child{
+      border-bottom: 1px solid $border-lighter;
+    }
+  }
+  &__link{
+    padding: 10px 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__iconBlock{
+    width: 22px;
+    display: block;
+  }
+  &__text{
+    font-size: 16px;
+    color: #000000;
+    display: block;
+    margin-left: 20px;
+  }
+  &__circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    width: 17px;
+    height: 17px;
+    background: #4CB0F8;
+    border-radius: 50%;
+  }
+  &__number{
+    font-size: 10px;
+    text-transform: capitalize;
+    color: #000000;
+  }
+  &__icon{
+    max-width: 100%;
+    height: auto;
+  }
+  &__delete{
+    position: absolute;
+    top: 4px;
+    right: 20px;
+  }
+  &__iconBlock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

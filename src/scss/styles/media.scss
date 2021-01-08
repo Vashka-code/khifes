@@ -1,0 +1,1807 @@
+@media(max-width: $desktopWidth){
+  .header{
+    &__search{
+      display: none;
+      &_mob{
+        display: block;
+        padding: 0 12px;
+        margin-top: -2px;
+      }
+      .search__button{
+        background: transparent;
+        position: relative;
+        z-index: 5;
+        transition: 0.3s;
+      }
+      .search__icon{
+        path{
+          fill: #000;
+          transition: 0.3s;
+        }
+      }
+      .search__input{
+        position: absolute;
+        z-index: 4;
+        right: 12px;
+        top: 0;
+        margin: auto;
+        padding-right: 30px;
+        opacity: 0;
+        transform: scaleX(0);
+        transition: 0.3s;
+        transform-origin: right center;
+        width: 260px;
+      }
+      &.active{
+        .search__button{
+          background: #000;
+        }
+        .search__icon{
+          path{
+            fill: #fff;
+          }
+        }
+        .search__input {
+          opacity: 1;
+          transform: scaleX(1);
+        }
+      }
+    }
+    &__funcItem{
+      &_mob{
+        display: block;
+      }
+    }
+  }
+  .indexSlider{
+    &__wrappers{
+      left: calc((100% - 85%)/2);
+    }
+  }
+  .knifeSlider{
+    &__container{
+      padding-bottom: 50px;
+    }
+  }
+  .knifeProduct{
+    &__priceNew{
+      font-size: 24px;
+    }
+    &__links{
+      margin-top: 6px;
+      justify-content: space-around;
+    }
+    &__linkName{
+      display: none;
+    }
+    &__inf{
+      width: 98px;
+    }
+  }
+  .tabCatalog{
+    padding-top: 40px;
+    &__tab{
+      font-size: 22px;
+    }
+    &__tabsList{
+      padding: 0 10px;
+    }
+  }
+  .sharesSlider {
+    padding-bottom: 50px;
+    &__container{
+      padding-bottom: 50px;
+    }
+  }
+  .share{
+    &__img{
+      width: 50%;
+    }
+    &__content{
+      width: 50%;
+      padding: 0 30px;
+    }
+    &__attention{
+      font-size: 45px;
+    }
+    &__percent{
+      font-size: 100px;
+    }
+    &__texts{
+      margin-top: 15px;
+    }
+    &__text{
+      font-size: 22px;
+    }
+    &__button{
+      margin-top: 30px;
+    }
+  }
+  .prev{
+    display: none;
+  }
+  .next{
+    display: none;
+  }
+  .videoBlock{
+    &__top{
+      width: 100%;
+      padding-bottom: 40px;
+    }
+    &__thumbs{
+      display: none;
+    }
+    &__gallery{
+      width: auto;
+      margin: 0 auto;
+      max-height: none;
+      overflow: auto;
+    }
+  }
+  .catalogBlock{
+    &__sitebar{
+      width: 30%;
+    }
+    &__content{
+      width: 68%;
+    }
+    &__products{
+      justify-content: flex-start;
+    }
+  }
+  .detailedBlock {
+    &__slider{
+      width: 40%;
+    }
+    &__datas{
+      width: 55%;
+    }
+    &__characteristic{
+      width: 49%;
+    }
+    &__desc{
+      width: 49%;
+    }
+  }
+  .contact{
+    padding: 22px 0 80px;
+    &__content{
+      margin-top: 35px;
+    }
+    &__inf{
+      width: 35%;
+    }
+    &__mapBlock{
+      width: 63%;
+    }
+    &__texts{
+      width: 70%;
+    }
+  }
+  .basketBlock {
+    &__table{
+      width: 100%;
+    }
+    &__infOrder{
+      margin-top: 25px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__productVendor{
+      margin-left: auto;
+    }
+  }
+  .checkoutBlock{
+    &__tabContent{
+      width: 100%;
+    }
+    &__tabBlock{
+      width: 65%;
+    }
+    &__yourOrder{
+      width: 30%;
+    }
+    &__item{
+      width: 48%;
+    }
+  }
+}
+@media(max-width: $smDesktopWidth){
+  .text{
+    &_20{
+      font-size: 16px;
+    }
+  }
+  .header{
+    &__infMenu{
+      margin-left: 89px;
+    }
+    &__phone{
+      margin-left: 63px;
+    }
+    &__link{
+      font-size: 14px;
+    }
+    &__item{
+      margin-top: 5px;
+    }
+    &__list{
+      margin-top: -5px;
+    }
+    &__menuBottom{
+      padding: 8px 0;
+    }
+    &__search{
+      display: none;
+      &_mob{
+        display: block;
+        position: relative;
+      }
+    }
+    &__funcLinkContent{
+      display: none;
+    }
+    &__funcLink{
+      &_basket{
+        .header__funcCircle {
+          right: 8px;
+        }
+      }
+    }
+  }
+  .logo{
+    &__img{
+      width: 148px;
+      height: auto;
+    }
+  }
+  .clock{
+    &__text{
+      font-size: 11px;
+    }
+  }
+  .phone{
+    &__number{
+      font-size: 18px;
+    }
+    &__order{
+      font-size: 11px;
+    }
+  }
+  .indexSlider{
+    &__title{
+      font-size: 36px;
+    }
+  }
+  .button{
+    width: 180px;
+    font-size: 18px;
+    text-transform: uppercase;
+    &_mini{
+      width: 115px;
+    }
+  }
+  .knifesGrid{
+    &__name{
+      left: 12px;
+      bottom: 12px;
+      font-size: 12px;
+    }
+  }
+  .knifeProduct{
+    &__textContent{
+      padding: 8px 4px;
+    }
+    &__name{
+      font-weight: 600;
+      font-size: 10px;
+    }
+    &__text{
+      margin-top: 5px;
+      font-size: 9px;
+    }
+    &__priceNew{
+      font-size: 14px;
+    }
+    &__priceOld{
+      font-size: 14px;
+      margin-left: 0;
+    }
+    &__inf{
+      margin-top: -5px;
+    }
+    &__icon{
+      max-width: 14px;
+    }
+    &__links{
+      margin-top: 0;
+    }
+  }
+  .buttonBaket{
+    &__button{
+      font-size: 14px;
+    }
+    &__buttonIcon{
+      max-width: 18px;
+    }
+  }
+  .tabCatalog{
+    &__tab{
+      margin-left: 30px;
+    }
+    &__tabText{
+      font-size: 12px;
+    }
+    &__tabIcon{
+      width: 12px;
+      height: auto;
+    }
+  }
+  .sharesSlider{
+    margin-top: 20px;
+  }
+  .shares{
+    &__img{
+      display: block;
+    }
+    &__name{
+      font-size: 16px;
+      margin-top: 18px;
+    }
+    &__text{
+      font-size: 12px;
+    }
+    &__more{
+      font-size: 14px;
+      margin-top: 9px;
+    }
+  }
+  .sharesBlock{
+    padding-top: 0;
+    padding-bottom: 10px;
+  }
+  .share{
+    &__img{
+      width: 60%;
+      margin-left: -10%;
+    }
+    &__content{
+      width: 50%;
+      padding: 0 30px;
+    }
+    &__attention{
+      font-size: 36px;
+    }
+    &__percent{
+      margin-top: -5px;
+      font-size: 72px;
+    }
+    &__texts{
+      margin-top: 0px;
+    }
+    &__text{
+      font-size: 16px;
+    }
+    &__button{
+      margin-top: 30px;
+    }
+  }
+  .reviewsBlock{
+    &__button{
+      display: none;
+    }
+    &__text{
+      font-size: 14px;
+    }
+    &__slideText{
+      padding: 18px 15px;
+    }
+  }
+  .aboutCompany{
+    padding: 54px 0 60px;
+    &__textBlock{
+      margin-top: 20px;
+    }
+    &__titles{
+      font-size: 20px;
+    }
+  }
+  .subscriptionBlock{
+    padding: 30px 0 40px;
+    &__text{
+      font-size: 20px;
+      margin-top: 5px;
+    }
+    &__agree{
+      font-size: 14px;
+    }
+  }
+  .footer{
+    &__top{
+      padding: 30px 0;
+    }
+    &__link{
+      font-size: 11px;
+    }
+    &__about{
+      font-size: 11px;
+    }
+  }
+  .knifeProduct{
+    width: 165px;
+  }
+  .buttonBaket{
+    padding: 9px 0;
+  }
+  .catalogBlock{
+    padding-bottom: 44px;
+    &__sitebar{
+      width: 20%;
+    }
+    &__content{
+      width: 78%;
+    }
+    &__wrapper{
+      margin-top: 20px;
+    }
+    &__selectText{
+      font-size: 14px;
+    }
+    &__selectBlock{
+      width: 190px;
+    }
+    &__select{
+      font-size: 12px;
+      padding: 7px 16px;
+    }
+    &__selectIcon{
+      width: 13px;
+      height: auto;
+    }
+    &__product{
+      margin-top: 14px;
+      margin-left: 4px;
+    }
+    &__products{
+      margin-left: -4px;
+    }
+    &__title{
+      font-size: 18px;
+    }
+    &__sitebarItem{
+      padding: 12px 0px;
+    }
+    &__checkText{
+      margin-left: 10px;
+      font-size: 12px;
+    }
+    &__label{
+      margin-top: 15px;
+    }
+    &__btn{
+      width: 20px;
+      height: 20px;
+    }
+    &__pageLink{
+      width: 20px;
+      height: 20px;
+      font-size: 16px;
+    }
+    &__selectButton{
+      font-size: 14px;
+    }
+  }
+  .goodsThisBlock  {
+    padding: 10px 0 40px;
+  }
+  .recommendationBlock{
+    padding-bottom: 35px;
+  }
+  .detailedBlock{
+    padding-top: 40px;
+    &__slider{
+      width: 45%;
+    }
+    &__datas{
+      width: 50%;
+    }
+    &__arrow{
+      &_prev{
+        left: -15px;
+      }
+      &_next{
+        right: -15px;
+      }
+    }
+    &__name{
+      font-size: 18px;
+    }
+    &__vendor{
+      margin-top: 0;
+      font-size: 16px;
+    }
+    &__prices{
+      margin-top: 5px;
+    }
+    &__price{
+      font-size: 30px;
+    }
+    &__count{
+      margin-top: 5px;
+      justify-content: space-between;
+    }
+    &__countText{
+      font-size: 14px;
+    }
+    &__countCheck{
+      font-size: 12px;
+      margin-left: 0;
+    }
+    &__inputCount{
+      margin: 0 5px;
+    }
+    &__countInf{
+      font-size: 14px;
+    }
+    &__btn{
+      font-size: 14px;
+    }
+    &__dataTexts{
+      margin-top: 8px;
+    }
+    &__dataItem{
+      &:nth-child(3){
+        display: none;
+      }
+      &:nth-child(4){
+        display: none;
+      }
+    }
+    &__dataOrder{
+      font-size: 14px;
+    }
+    &__dataInf, &__dataTitle{
+      font-size: 14px;
+    }
+    &__dataGrey{
+      padding: 8px 16px 14px;
+    }
+    &__about{
+      margin-top: 20px;
+      padding: 20px 15px 24px 22px;
+    }
+    &__aboutTitle{
+      font-size: 22px;
+    }
+    &__aboutText{
+      font-size: 12px;
+    }
+    &__textCheck{
+      width: 90%;
+    }
+    &__aboutMinTitle{
+      font-size: 14px;
+      margin-top: 16px;
+    }
+  }
+  .inputCount{
+    width: 76px;
+    padding: 4px 7px;
+    &__btn{
+      font-size: 18px;
+    }
+    &__input{
+      flex-grow: 1;
+      font-size: 18px;
+    }
+  }
+  .contact{
+    padding: 22px 0 60px;
+    &__content{
+      margin-top: 35px;
+    }
+    &__inf{
+      width: 35%;
+      padding: 22px 15px;
+    }
+    &__mapBlock{
+      width: 63%;
+    }
+    &__texts{
+      width: 70%;
+    }
+    &__titles{
+      font-size: 18px;
+    }
+    &__item{
+      margin-top: 26px;
+    }
+    &__iconBlock{
+      width: 40px;
+    }
+    &__icon{
+      max-width: 100%;
+      height: auto;
+    }
+    &__textTitle{
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+    &__text{
+      font-size: 11px;
+    }
+  }
+  .basketBlock {
+    &__table{
+      width: 100%;
+    }
+    &__productContent{
+      width: 302px;
+      margin-left: 22px;
+    }
+    &__number{
+      width: 76px;
+    }
+    &__text{
+      font-size: 12px;
+    }
+    &__price{
+      font-size: 18px;
+    }
+    &__infOrder{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    &__data{
+      width: 45%;
+      background: #fff;
+    }
+    &__infFunc{
+      width: 45%;
+    }
+    &__button{
+      width: 100%;
+    }
+    &__dataTitle{
+      font-size: 18px;
+    }
+    &__dataText{
+      &_price{
+        font-size: 24px;
+      }
+    }
+  }
+  .checkoutBlock{
+    &__titles{
+      font-size: 16px;
+    }
+    &__text{
+      font-size: 12px;
+    }
+    &__tabContent{
+      margin-top: 20px;
+    }
+    &__selectIcon{
+      width: 15px;
+      height: auto;
+    }
+    &__tabButton {
+      width: 234px;
+      margin-top: 34px;
+    }
+    &__yourOrder{
+      padding: 20px 20px 25px;
+    }
+    &__yourTitle{
+      font-size: 18px;
+      &:after{
+        width: 100%;
+      }
+    }
+    &__all{
+      margin-top: 10px;
+      font-size: 12px;
+    }
+    &__edit{
+      margin-top: 48px;
+      align-items: flex-end;
+    }
+    &__editText{
+      font-size: 11px;
+    }
+    &__totalText{
+      font-size: 12px;
+    }
+    &__totalPrice{
+      font-size: 24px;
+      margin-left: auto;
+    }
+  }
+  .deliveryBlock{
+    padding: 22px 0 64px;
+    &__infs{
+      margin-top: 22px;
+    }
+    &__infTitle{
+      font-size: 14px;
+    }
+    &__infAdress{
+      font-size: 12px;
+    }
+    &__infText{
+      font-size: 12px;
+      margin-top: 14px;
+    }
+    &__block{
+      margin-top: 40px;
+    }
+    &__checks, &__texts{
+      margin-top: 15px;
+    }
+    &__list{
+      margin-top: 26px;
+    }
+    &__itemTitle{
+      width: 100%;
+    }
+    &__companys{
+      margin-top: 33px;
+    }
+    &__items{
+      max-width: 145px;
+      &_lines{
+        max-width: 184px;
+      }
+    }
+    &__img{
+      width: 100%;
+      height: auto;
+    }
+  }
+  .titleText{
+    font-size: 18px;
+  }
+  .personalArea{
+    &__sitebar{
+      width: 30%;
+    }
+    &__content{
+      width: 68%;
+    }
+    &__table{
+      width: 100%;
+    }
+    &__tableAdress{
+      width: 40%;
+    }
+    &__link{
+      font-size: 12px;
+      padding: 18px 14px;
+    }
+    &__name{
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+    &__wrapper{
+      margin-top: 28px;
+    }
+    &__data{
+      margin-top: 0;
+      font-size: 14px;
+    }
+  }
+  .comparison{
+    &__imgBlock{
+      height: 164px;
+    }
+    &__option{
+      font-size: 12px;
+    }
+    &__optionText{
+      font-size: 12px;
+      display: block;
+    }
+  }
+}
+@media(max-width: $tableWidth){
+  .text{
+    font-size: 14px;
+  }
+  .header{
+    &__infs{
+      display: none;
+    }
+    &__menuTop{
+      padding: 14px 0;
+    }
+    &__funcs{
+      margin-top: 0;
+      align-items: center;
+    }
+    &__phone{
+      display: none;
+    }
+    &__funcItem{
+      display: none;
+      &_mobAct{
+        display: block;
+      }
+      &_basket{
+        margin-top: -4px;
+      }
+    }
+    &__logo{
+      margin-left: 12px;
+    }
+    &__nav{
+      display: none;
+    }
+    &__mobCatalog{
+      display: flex;
+    }
+  }
+  .menuBtn{
+    display: block;
+  }
+  .burgerPopup{
+    display: block;
+  }
+  .catalogPopup{
+    display: block;
+  }
+  .indexSlider{
+    &__title{
+      font-size: 28px;
+    }
+    &__slide{
+      padding: 50px 0 90px;
+    }
+    &__button{
+      margin-top: 22px;
+    }
+    &__wrappers{
+      display: none;
+    }
+    &__pagination {
+      .swiper-pagination-bullet{
+        width: 15px;
+        height: 15px;
+        &::after{
+          width: 9px;
+          height: 9px;
+        }
+      }
+    }
+  }
+  .button{
+    width: 180px;
+    font-size: 18px;
+    text-transform: uppercase;
+    &_mini{
+      width: 115px;
+    }
+  }
+  .knifesGrid{
+    display: none;
+  }
+  .tabCatalog{
+    padding-bottom: 40px;
+    &__tab{
+      font-size: 18px;
+      margin-left: 20px;
+    }
+  }
+  .title{
+    font-size: 28px;
+    &::after{
+      width: 52px;
+    }
+  }
+  .more{
+    &__text{
+      font-size: 12px;
+    }
+    &__icon{
+      width: 12px;
+      margin-left: 4px;
+    }
+  }
+  .reviewsBlock{
+    &__container{
+      padding-bottom: 30px;
+    }
+  }
+  .subscriptionBlock{
+    padding: 30px 0 40px;
+    &__text{
+      font-size: 20px;
+      margin-top: 5px;
+    }
+    &__agree{
+      font-size: 14px;
+    }
+    &__form{
+      flex-wrap: nowrap;
+    }
+    &__input{
+      width: 60%;
+    }
+  }
+  .videoBlock{
+    padding: 40px 0 75px;
+    &__slider{
+      margin-top: 28px;  
+    }
+  }
+  .catalogBlock{
+    padding-bottom: 20px;
+    &__sitebar{
+      position: absolute;
+      width: 100%;
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.4);
+      left: 0;
+      top: 0;
+      background: #fff;
+      padding: 20px 30px;
+      opacity: 0;
+      transition: 0.3s;
+      transform: scaleX(0);
+      transform-origin: left center;
+      &.active{
+        opacity: 1;
+        transition: 0.3s;
+        transform: scaleX(1);
+      }
+    }
+    &__content{
+      width: 100%;
+    }
+    &__infMob{
+      display: flex;
+    }
+    &__wrapper{
+      margin-top: 0;
+    }
+    &__selects{
+      display: none;
+      &_mob{
+        display: flex;
+        margin-top: 14px;
+        margin-bottom: 10px;
+      }
+    }
+    &__products{
+      justify-content: center;
+    }
+    &__sitebarTop{
+      display: flex;
+    }
+    &__sitebarThrow{
+      display: flex;
+    }
+  }
+  .detailedBlock{
+    &__btn{
+      font-size: 14px;
+    }
+  }
+  .costCalculation{
+    padding: 24px;
+    &__texts{
+      width: 100%;
+      margin: 10px 0;
+    }
+    &__list{
+      margin-top: 15px;
+    }
+  }
+  .basketBlock {
+    &__productContent{
+      width: 234px;
+    }
+    &__button{
+      width: 100%;
+    }
+    &__price{
+      margin-left: 5px;
+      width: 90px;
+    }
+  }
+  .checkoutBlock{
+    &__tabBlock{
+      width: 60%;
+    }
+    &__yourOrder{
+      width: 35%;
+    }
+    &__tabButton{
+      width: 100%;
+    }
+  }
+  .popup{
+    padding: 38px 32px;
+    min-height: auto;
+    &__title{
+      &_thanks{
+        margin-top: 0;
+      }
+    }
+    &__inputBlock{
+      margin-top: 12px;
+    }
+    &__text{
+      font-size: 14px;
+      margin-top: 14px;
+    }
+  }
+  .personalArea{
+    &__tableEdits{
+      width: 100%;
+      justify-content: flex-end;
+      margin-top: 5px;
+    }
+    &__tableCity{
+      width: 25%;
+    }
+    &__tableAdress{
+      width: 70%;
+    }
+  }
+}
+@media(max-width: $smTableWidth){
+  .tabCatalog{
+    &__tabsList {
+      justify-content: space-between;
+      width: 100%;
+    }
+    &__tab{
+      margin-left: 0px;
+    }
+    &__tabLink{
+      width: 100%;
+      justify-content:flex-end;
+      margin-top: 10px;
+    }
+    &__tabContent{
+      margin-top: 15px;
+    }
+  }
+  .title{
+    font-size: 24px;
+    &::after{
+      width: 52px;
+    }
+  }
+  .share{
+    &__img{
+      width: 100%;
+      margin-left: 0%;
+    }
+    &__content{
+      width: 100%;
+      padding: 20px 30px;
+    }
+  }
+  .footer{
+    &__tel{
+      margin-top: 0;
+      font-size: 12px;
+    }
+    &__time{
+      margin-top: 0;
+      font-size: 12px;
+    }
+    &__column{
+      width: 45%;
+      margin-top: 15px;
+      &:first-child{
+        width: 100%; 
+        margin-top: 0;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    &__sochials{
+      margin-top: 20px;
+    }
+  } 
+  .breadCrumbs{
+    display: none;
+  }
+  .detailedBlock{
+    &__name{
+      font-size: 16px;
+    }
+    &__vendor{
+      font-size: 12px;
+    }
+    &__price{
+      font-size: 24px;
+    }
+    &__count{
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    &__inputCount{
+      margin: 10px 0;
+    }
+    &__btns{
+      margin-top: 15px;
+    }
+    &__btn{
+      margin-top: 5px;
+      font-size: 12px;
+    }
+    &__thumbsMain{
+      margin-top: 10px;
+    }
+    &__dataText{
+      font-size: 12px;
+    }
+    &__dataGrey{
+      margin-top: 14px;
+    }
+    &__dataItem{
+      padding: 13px 0;
+    }
+    &__dataOrder{
+      font-size: 12px;
+    }
+    &__dataList{
+      margin-top: 5px;
+    }
+    &__dataInf{
+      font-size: 12px;
+      display: block;
+    }
+    &__dataTitle{
+      font-size: 12px;
+    }
+    &__more{
+      margin-left: 0;
+      font-size: 12px;
+    }
+    &__aboutTitle{
+      font-size: 18px;
+    }
+    &__aboutText{
+      font-size: 11px;
+    }
+    &__iconCheck{
+      width: 12px;
+      height: auto;
+    }
+    &__aboutDown{
+      display: block;
+      transition: 0.3s;
+      path{
+        fill: #fff;
+      }
+    }
+    &__characteristic, &__desc{
+      width: 100%;
+    }
+    &__about{
+      padding: 0;
+    }
+    &__aboutTitle{
+      font-size: 16px;
+      color: #fff;
+      background: #9F9F9F;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 19px 9px 24px;
+      &.active{
+        .detailedBlock__aboutDown{
+          transform: rotate(180deg);
+        }
+      }
+    }
+    &__aboutContent{
+      padding: 12px 16px;
+      display: none;
+      margin-top: 0;
+      &.active{
+        display: block;
+      }
+    }
+    &__desc{
+      margin-top: 9px;
+    }
+  }
+  .recommendationBlock{
+    padding: 20px 0 30px;
+    &__knifeSlider{
+      margin-top: 26px;
+    }
+  }
+  .contact{
+    &__title{
+      margin-top: 0;
+      display: none;
+    }
+    &__content{
+      margin-top: 0;
+      flex-wrap: wrap;
+    }
+    &__inf{
+      width: 100%;
+    }
+    &__mapBlock{
+      width: 100%;
+      display: block;
+      margin-top: 15px;
+      height: 320px;
+    }
+  }
+  .basketBlock {
+    padding-bottom: 20px;
+    &__titleBlock{
+      display: none;
+    }
+    &__content{
+      margin-top: 20px;
+    }
+    &__tableItem {
+      flex-direction: column;
+      padding: 12px 0px 22px;
+    }
+    &__productImg{
+      margin: 0 auto;
+    }
+    &__productInf{
+      width: 100%;
+      margin-top: 15px;
+      flex-wrap: wrap;
+    }
+    &__productContent {
+      width: 100%;
+      margin-left: 0;
+    }
+    &__number{
+      width: 100%;
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+      flex-direction: row;
+    }
+    &__price{
+      width: 100%;
+      margin-top: 15px;
+      font-size: 24px;
+    }
+    &__data{
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0;
+    }
+    &__infFunc{
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__dataType{
+      width: 50%;
+    }
+    &__button{
+      width: 100%;
+    }
+  }
+  .checkoutBlock{
+    &__tabBlock{
+      width: 100%;
+    }
+    &__yourOrder{
+      display: none;
+    }
+    &__infOrder{
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+    &__content{
+      margin-top: 20px;
+    }
+    &__tabButton {
+      display: none;
+    }
+    &__tabContent{
+      padding-left: 0;
+      margin-top: 30px;
+      display: none;
+      &.active{
+        display: block;
+      }
+      &:first-child{
+        margin-top: 30px;
+      }
+      &::before{
+        display: none;
+      }
+    }
+    &__about{
+      display: none;
+      &_mob{
+        display: block;
+      }
+    }
+    &__btns{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+    &__buttonMob{
+      width: 45%;
+      border: 1px solid #000000;
+      padding: 12px 0;
+      display: block;
+      background: transparent;
+      font-weight: 600;
+      font-size: 14px;
+      text-transform: uppercase;
+      color: #000000;
+      transition: 0.3s;
+      &:hover{
+        background: #000;
+        color: #fff;
+      }
+      &_next{
+        border: 1px solid $primary-color;
+        color: $primary-color;
+        &:hover{
+          background: $primary-color;
+          color: #fff;
+        }
+      }
+    }
+    &__tabs{
+      display: flex;
+    }
+  }
+  .deliveryBlock{
+    &__inf{
+      width: 100%;
+      margin-top: 28px;
+      text-align: center;
+    }
+    .deliveryBlock__infAdress, .deliveryBlock__infTitle {
+      width: 100%;
+    }
+    &__item{
+      width: 100%;
+    }
+    &__items{
+      max-width: 122px;
+    }
+  }
+  .titleText{
+    font-size: 14px;
+  }
+  .personalArea{
+    padding: 20px 0 30px;
+    &__table{
+      display: none;
+    }
+    &__wrapper{
+      flex-wrap: wrap;
+    }
+    &__sitebar{
+      width: 100%;
+    }
+    &__link{
+      padding: 6px 22px;
+      &_blue{
+        background: $neutral-secondary;
+        &:hover{
+          background: #C2C2C2;
+        }
+      }
+    }
+    &__name{
+      padding: 13px 22px;
+      background: #B1DFFF;
+      &:hover{
+        background: #B1DFFF;
+      }
+    }
+    &__nameIcon{
+      display: block;
+    }
+    &__linksOver{
+      position: relative;
+    }
+    &__links{
+      position: absolute;
+      left: 0;
+      top: 5px;
+      transform: scaleY(0);
+      opacity: 0;
+      transform-origin: top center;
+      transition: 0.3s;
+      width: 100%;
+      z-index: 4;
+      &.active{
+        transform: scaleY(1);
+        opacity: 1;
+      }
+    }
+    &__content{
+      margin-top: 22px;
+      margin-left: 0px;
+      width: 100%;
+    }
+    &__datas{
+      margin-top: 5px;
+    }
+    &__linkItem{
+      margin-top: 0;
+    }
+    &__linkCircle{
+      display: none;
+    }
+    &__products{
+      justify-content: center;
+    }
+  }
+  .comparison{
+    padding: 20px 0 40px;
+    &__blueLine{
+      margin-top: 20px;
+      padding: 21px 0;
+      background: #B1DFFF;
+    }
+    &__table{
+      margin-top: 17px;
+      position: relative;
+    }
+    &__tableSlider{
+      position: static;
+    }
+    &__prev{
+      right: auto;
+      left: 0;
+      top: -38px;
+    }
+    &__next{
+      top: -38px;
+    }
+    &__pagination{
+      top: -49px;
+      bottom: auto;
+    }
+    &__price{
+      font-size: 16px;
+    }
+    &__buttonBaket{
+      margin-top: 6px;
+    }
+    &__option{
+      padding: 6px 2px;
+    }
+  }
+}
+@media(max-width: $phoneWidth){
+  .text{
+    font-size: 12px;
+  }
+  .header{
+    &__logo{
+      width: 100px;
+      height: auto;
+    }
+    &__funcImg{
+      width: 25px;
+      height: auto;
+    }
+    &__funcLink{
+      padding: 0 9px;
+      &_basket{
+        .header__funcCircle {
+          right: 0px;
+          top: -4px;
+        }
+      }
+    }
+    &__mobCatalogLink, &__mobCatalogName{
+      font-size: 16px;
+    }
+  }
+  .burgerPopup{
+    &__text{
+      font-size: 16px;
+    }
+  }
+  .catalogPopup{
+    &__text{
+      font-size: 16px;
+    }
+  }
+  .indexSlider{
+    &__slide{
+      padding: 30px 0 70px;
+    }
+    &__title{
+      font-size: 23px;
+    }
+  }
+  .button{
+    width: 160px;
+    font-size: 16px;
+    &_mini{
+      width: 95px;
+    }
+  }
+  .knifeSlider{
+    &__container{
+      padding-left: 0;
+      padding-right: 0;
+    }
+    &__container{
+      padding-bottom: 30px;
+    }
+  }
+  .knifeProduct{
+    width: 135px;
+    &__text{
+      display: none;
+    }
+    &__priceNew{
+      font-size: 11px;
+    }
+    &__priceOld{
+      font-size: 11px;
+    }
+    &__availability{
+      font-size: 8px;
+    }
+    &__infs{
+      flex-wrap: nowrap;
+    }
+    &__inf{
+      flex-grow: 1;
+      width: auto;
+      text-align: center;
+    }
+    &__Links{
+      width: 100%;
+    }
+  }
+  .buttonBaket{
+    &__button{
+      font-size: 12px;
+      padding: 5px 0;
+    }
+    &__buttonIcon{
+      width: 15px;
+      margin-left: 9px;
+    }
+  }
+  .pagination{
+    bottom: 0!important;
+    .swiper-pagination-bullet{
+      margin: 0 5px!important;
+      width: 15px;
+      height: 15px;
+      &:after{
+        width: 8px;
+        height: 8px;
+      }
+    }
+    .swiper-pagination-bullet-active{
+      width: 15px;
+      height: 15px;
+    }
+  }
+  .tabCatalog{
+    &__tabsList {
+      padding: 0;
+    }
+    &__tab{
+      margin-left: 0px;
+      font-size: 13px;
+    }
+    &__tabIcon{
+      width: 8px;
+      margin-left: 4px;
+    }
+  }
+  .share{
+    &__attention{
+      font-size: 32px;
+    }
+    &__percent{
+      font-size: 60px;
+    }
+    &__text{
+      font-size: 14px;
+    }
+  }
+  .more{
+    &_abs{
+      bottom: -15px;
+    }
+  }
+  .reviewsBlock{
+    &__container{
+      padding-bottom: 10px;
+    }
+    &__datas{
+      margin-left: 10px;
+      margin-top: 6px;
+    }
+    &__text{
+      font-size: 13px;
+    }
+  }
+  .aboutCompany{
+    padding: 26px 0 30px;
+    &__text{
+      font-size: 12px;
+    }
+    &__textBlock{
+      &_hide{
+        display: none;
+        &.active{
+          display: block;
+        }
+      }
+    }
+    &__more{
+      display: block;
+      margin-top: 18px;
+    }
+  }
+  .subscriptionBlock{
+    padding: 20px 0 30px;
+    &__text{
+      font-size: 13px;
+      margin-top: 5px;
+    }
+    &__agree{
+      font-size: 12px;
+      margin-top: 10px;
+    }
+    &__form{
+      flex-wrap: nowrap;
+      margin-top: 15px;
+    }
+    &__input{
+      padding: 10px 16px;
+      flex-grow: 1;
+    }
+    &__button{
+      font-size: 14px;
+    }
+  }
+  .videoBlock{
+    padding: 17px 0 28px;
+    &__top{
+      padding-bottom: 20px;
+    }
+    &__playBtn{
+      width: 45px;
+      height: 45px;
+    }
+    &__playIcon{
+      width: 14px;
+      height: auto;
+    }
+  }
+  .catalogBlock{
+    &__pagination{
+      margin-top: 22px;
+    }
+  }
+  .detailedBlock{
+    padding-top: 22px;
+    &__slider{
+      width: 100%;
+    }
+    &__datas{
+      width: 100%;
+      margin-top: 10px;
+    }
+    &__count{
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__inputCount{
+      margin: 0 5px;
+    }
+    &__name{
+      display: none;
+      font-size: 14px;
+      margin-bottom: 14px;
+      &_mob{
+        display: block;
+      }
+    }
+    &__arrow{
+      &_prev{
+        left: -10px;
+      }
+      &_next{
+        right: -10px;
+      }
+    }
+    &__vendor{
+      display: none;
+    }
+    &__countText{
+      font-size: 12px;
+    }
+    &__countInf{
+      font-size: 10px;
+    }
+    &__btn{
+      font-size: 12px;
+    }
+    &__aboutText{
+      margin-top: 0;
+    }
+    &__aboutItem{
+      &:first-child{
+        margin-top: 0;
+      }
+    }
+  }
+  .inputCount{
+    width: 66px;
+    &__input{
+      width: 30px;
+      font-size: 14px;
+    }
+  }
+  .costCalculation{
+    &__text{
+      font-size: 14px;
+    }
+  }
+  .basketBlock{
+    &__button{
+      width: 100%;
+    }
+  }
+  .checkoutBlock{
+    padding-bottom: 55px;
+    &__tabs{
+      &:after{
+        width: 85%;
+      }
+    }
+    &__buttonMob{
+      width: 48%;
+      font-size: 12px;
+    }
+  }
+  .popup{
+    &__btn{
+      margin-top: 15px;
+    }
+  }
+  .deliveryBlock{
+    &__infs{
+      margin-top: 0;
+    }
+  }
+  .comparison{
+    &__options{
+      width: 130px;
+    }
+    &__tableSlider{
+      width: calc(100% - 130px);
+    }
+    &__imgBlock{
+      height: 135px;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.contact{
+  padding: 22px 0 120px;
+  &__title{
+    margin-top: 25px;
+  }
+  &__content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+  }
+  &__inf{
+    width: 429px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.4);
+    padding: 23px 30px 60px 48px;
+  }
+  &__titles{
+    font-family: $secondFont;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  &__textTitle{
+    font-family: $secondFont;
+    font-weight: bold;
+    font-size: 18px;
+    color: #000000;
+    display: block;
+  }
+  &__text{
+    font-size: 14px;
+    color: #000;
+  }
+  &__texts{
+    width: 290px;
+    margin-left: 12px;
+  }
+  &__item{
+    margin-top: 38px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  &__iconBlock{
+    width: 47px;
+    display: flex;
+    justify-content: center;
+  }
+  &__mapBlock{
+    width: 768px;
+  }
+  &__map{
+    height: 100%;
+    width: 100%;
+  }
+}

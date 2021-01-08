@@ -1,0 +1,17 @@
+.input{
+  background: #FFFFFF;
+  border: 1px solid $border-light;
+  max-width: 482px;
+  outline: none;
+  transition: 0.3s;
+  width: 100%;
+  font-size: 14px;
+  padding: 8px 16px;
+  &_textarea {
+    height: 104px;
+    resize: none;
+  }
+  &:focus{
+    border: 1px solid $border-base-hover;
+  }
+}

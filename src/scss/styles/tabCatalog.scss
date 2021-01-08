@@ -1,0 +1,79 @@
+.tabCatalog{
+  padding: 77px 0;
+  &__tabs{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  &__tabText{
+    font-weight: 600;
+    font-size: 18px;
+    display: block;
+    border-bottom: 1px dashed #000;
+    color: #000;
+  }
+  &__tabLink{
+    display: flex;
+    align-items: center;
+  }
+  &__tabIcon{
+    display: block; 
+    margin-left: 12px;
+  }
+  &__tabsList{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 5px solid $border-lightex;
+    padding: 0 40px 0 10px;
+  }
+  &__tab{
+    font-weight: bold;
+    font-size: 30px;
+    color: #555555;
+    font-family: $secondFont;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 0 4px;
+    position: relative;
+    margin-left: 102px;
+    &:first-child{
+      margin-left: 0;
+    }
+    &.active{
+      color: $primary-color;
+      &::after{
+        width: 100%;
+      }
+    }
+    &:hover{
+      color: $primary-color;
+      &::after{
+        width: 100%;
+      }
+    }
+    &::after{
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      bottom: -5px;
+      width: 0;
+      height: 5px;
+      background: $primary-color;
+      transition: 0.3s;
+    }
+  }
+  &__tabContents{
+    position: relative;
+  }
+  &__tabContent{
+    margin-top: 38px;
+    display: none;
+    &.active{
+      display: block!important;
+    }
+  }
+}

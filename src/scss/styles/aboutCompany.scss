@@ -1,0 +1,29 @@
+.aboutCompany{
+  padding: 54px 0 105px;
+  &__textBlock{
+    margin-top: 60px;
+  }
+  &__text{
+    font-size: 14px;
+  }
+  &__titles{
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: capitalize;
+    color: $neutral-regular;
+    font-family: $secondFont;
+  }
+  &__list{
+    padding-left: 20px;
+  }
+  &__item{
+    list-style: disc;
+  }
+  &__more{
+    display: none;
+    font-weight: bold;
+    font-size: 11px;
+    text-decoration-line: underline;
+    color: $primary-color;
+  }
+}

@@ -318,6 +318,7 @@
     }
   }
   .buttonBaket{
+    font-size: 18px;
     &__button{
       font-size: 14px;
     }
@@ -1486,6 +1487,10 @@
     &__option{
       padding: 6px 2px;
     }
+  }
+  .buttonBaket{
+    font-size: 14px;
+    padding: 6px 0;
   }
 }
 @media(max-width: $phoneWidth){

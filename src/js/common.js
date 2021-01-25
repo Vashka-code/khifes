@@ -324,7 +324,7 @@ document.addEventListener('DOMContentLoaded', () => {
         freeMode: true,
         watchSlidesVisibility: true,
         watchSlidesProgress: true,
-        loop: true,
+        // loop: true,
         navigation: {
           nextEl: detailedNext,
           prevEl: detailedPrev,
@@ -332,7 +332,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
       var detailedBlockTop = new Swiper('.detailedBlock__top', {
         spaceBetween: 40,
-        loop: true,
+        // loop: true,
         thumbs: {
           swiper: detailedBlockThumbs
         }
